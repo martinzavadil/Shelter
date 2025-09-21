@@ -1,0 +1,80 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e4]:
+      - link "Sheltr" [ref=e6] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e8]:
+        - link "Map" [ref=e9] [cursor=pointer]:
+          - /url: /map
+        - link "Discover" [ref=e10] [cursor=pointer]:
+          - /url: /discover
+        - link "Trip Builder" [ref=e11] [cursor=pointer]:
+          - /url: /trip-builder
+        - link "Emergency" [ref=e12] [cursor=pointer]:
+          - /url: /emergency
+      - generic [ref=e14]: Loading...
+  - main [ref=e15]:
+    - generic [ref=e16]:
+      - link "Back to Map" [ref=e18] [cursor=pointer]:
+        - /url: /map
+        - img
+        - text: Back to Map
+      - generic [ref=e19]:
+        - generic [ref=e21]:
+          - generic [ref=e22]:
+            - generic [ref=e23]: Matterhorn Hut
+            - generic [ref=e24]:
+              - img [ref=e25]
+              - generic [ref=e28]: 45.9763, 7.6581
+              - img [ref=e29]
+              - generic [ref=e31]: 3260m elevation
+          - generic [ref=e32]:
+            - generic [ref=e33]:
+              - heading "Description" [level=4] [ref=e34]
+              - paragraph [ref=e35]: Iconic shelter beneath the legendary Matterhorn peak. Essential stop for climbers attempting the Hörnli Ridge.
+            - generic [ref=e36]:
+              - generic [ref=e37]:
+                - heading "Basic Information" [level=4] [ref=e38]
+                - generic [ref=e39]:
+                  - generic [ref=e40]:
+                    - generic [ref=e41]: "Type:"
+                    - generic [ref=e42]: hut
+                  - generic [ref=e43]:
+                    - generic [ref=e44]: "Cost:"
+                    - generic [ref=e45]: Paid
+                  - generic [ref=e46]:
+                    - generic [ref=e47]: "Capacity:"
+                    - generic [ref=e48]:
+                      - img [ref=e49]
+                      - text: "80"
+                  - generic [ref=e54]:
+                    - generic [ref=e55]: "Serviced:"
+                    - generic [ref=e56]: "Yes"
+              - generic [ref=e57]:
+                - heading "Access & Amenities" [level=4] [ref=e58]
+                - generic [ref=e59]:
+                  - generic [ref=e60]:
+                    - generic [ref=e61]: "Access:"
+                    - generic [ref=e63]: foot
+                  - generic [ref=e64]:
+                    - generic [ref=e65]: "Amenities:"
+                    - generic [ref=e66]:
+                      - generic [ref=e67]: toilet
+                      - generic [ref=e68]: water
+                      - generic [ref=e69]: food
+                      - generic [ref=e70]: electricity
+        - generic [ref=e72]:
+          - generic [ref=e74]:
+            - generic [ref=e75]: Add a Review
+            - generic [ref=e76]: Sign in to share your experience
+          - generic [ref=e78]:
+            - generic [ref=e79]: Upload Photos
+            - generic [ref=e80]: Sign in to share photos of this shelter
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e86] [cursor=pointer]:
+    - img [ref=e87] [cursor=pointer]
+  - alert [ref=e90]
+```

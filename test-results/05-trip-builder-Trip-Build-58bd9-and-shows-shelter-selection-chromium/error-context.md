@@ -1,0 +1,1217 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e4]:
+      - link "Sheltr" [ref=e6] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e8]:
+        - link "Map" [ref=e9] [cursor=pointer]:
+          - /url: /map
+        - link "Discover" [ref=e10] [cursor=pointer]:
+          - /url: /discover
+        - link "Trip Builder" [ref=e11] [cursor=pointer]:
+          - /url: /trip-builder
+        - link "Emergency" [ref=e12] [cursor=pointer]:
+          - /url: /emergency
+      - generic [ref=e14]: Loading...
+  - main [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - heading "Trip Builder" [level=1] [ref=e18]
+        - paragraph [ref=e19]: Plan your mountain adventure by selecting shelters and estimating daily stages
+      - generic [ref=e20]:
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - generic [ref=e24]:
+              - img [ref=e25]
+              - text: Select Shelters
+            - generic [ref=e28]: Search and add shelters to your trip
+          - generic [ref=e30]:
+            - textbox "Search shelters..." [ref=e31]
+            - generic [ref=e32]:
+              - generic [ref=e34]:
+                - generic [ref=e35]:
+                  - heading "Aragon Emergency Hut" [level=4] [ref=e37]
+                  - generic [ref=e38]:
+                    - generic [ref=e39]: shelter
+                    - generic [ref=e40]:
+                      - img [ref=e41]
+                      - text: 1950m
+                    - generic [ref=e43]:
+                      - img [ref=e44]
+                      - text: "10"
+                    - generic [ref=e49]: Free
+                  - generic [ref=e50]:
+                    - img [ref=e51]
+                    - text: 42.650, -0.200
+                - button [ref=e54]:
+                  - img
+              - generic [ref=e56]:
+                - generic [ref=e57]:
+                  - heading "Bavaria Mountain Shelter" [level=4] [ref=e59]
+                  - generic [ref=e60]:
+                    - generic [ref=e61]: shelter
+                    - generic [ref=e62]:
+                      - img [ref=e63]
+                      - text: 1700m
+                    - generic [ref=e65]:
+                      - img [ref=e66]
+                      - text: "16"
+                    - generic [ref=e71]: Free
+                  - generic [ref=e72]:
+                    - img [ref=e73]
+                    - text: 47.500, 12.500
+                - button [ref=e76]:
+                  - img
+              - generic [ref=e78]:
+                - generic [ref=e79]:
+                  - heading "Berchtesgaden Emergency Hut" [level=4] [ref=e81]
+                  - generic [ref=e82]:
+                    - generic [ref=e83]: shelter
+                    - generic [ref=e84]:
+                      - img [ref=e85]
+                      - text: 1850m
+                    - generic [ref=e87]:
+                      - img [ref=e88]
+                      - text: "12"
+                    - generic [ref=e93]: Free
+                  - generic [ref=e94]:
+                    - img [ref=e95]
+                    - text: 47.600, 13.000
+                - button [ref=e98]:
+                  - img
+              - generic [ref=e100]:
+                - generic [ref=e101]:
+                  - heading "Black Forest Shelter" [level=4] [ref=e103]
+                  - generic [ref=e104]:
+                    - generic [ref=e105]: shelter
+                    - generic [ref=e106]:
+                      - img [ref=e107]
+                      - text: 1200m
+                    - generic [ref=e109]:
+                      - img [ref=e110]
+                      - text: "22"
+                    - generic [ref=e115]: Free
+                  - generic [ref=e116]:
+                    - img [ref=e117]
+                    - text: 48.000, 8.000
+                - button [ref=e120]:
+                  - img
+              - generic [ref=e122]:
+                - generic [ref=e123]:
+                  - heading "Blaueishütte" [level=4] [ref=e125]
+                  - generic [ref=e126]:
+                    - generic [ref=e127]: hut
+                    - generic [ref=e128]:
+                      - img [ref=e129]
+                      - text: 1651m
+                    - generic [ref=e131]:
+                      - img [ref=e132]
+                      - text: "60"
+                    - generic [ref=e137]: Paid
+                  - generic [ref=e138]:
+                    - img [ref=e139]
+                    - text: 47.550, 12.850
+                - button [ref=e142]:
+                  - img
+              - generic [ref=e144]:
+                - generic [ref=e145]:
+                  - heading "Bucegi Valley Shelter" [level=4] [ref=e147]
+                  - generic [ref=e148]:
+                    - generic [ref=e149]: shelter
+                    - generic [ref=e150]:
+                      - img [ref=e151]
+                      - text: 1800m
+                    - generic [ref=e153]:
+                      - img [ref=e154]
+                      - text: "20"
+                    - generic [ref=e159]: Free
+                  - generic [ref=e160]:
+                    - img [ref=e161]
+                    - text: 45.400, 25.500
+                - button [ref=e164]:
+                  - img
+              - generic [ref=e166]:
+                - generic [ref=e167]:
+                  - heading "Cabana Malaiesti" [level=4] [ref=e169]
+                  - generic [ref=e170]:
+                    - generic [ref=e171]: hut
+                    - generic [ref=e172]:
+                      - img [ref=e173]
+                      - text: 1724m
+                    - generic [ref=e175]:
+                      - img [ref=e176]
+                      - text: "60"
+                    - generic [ref=e181]: Paid
+                  - generic [ref=e182]:
+                    - img [ref=e183]
+                    - text: 45.383, 25.483
+                - button [ref=e186]:
+                  - img
+              - generic [ref=e188]:
+                - generic [ref=e189]:
+                  - heading "Cabana Omu" [level=4] [ref=e191]
+                  - generic [ref=e192]:
+                    - generic [ref=e193]: hut
+                    - generic [ref=e194]:
+                      - img [ref=e195]
+                      - text: 2507m
+                    - generic [ref=e197]:
+                      - img [ref=e198]
+                      - text: "85"
+                    - generic [ref=e203]: Paid
+                  - generic [ref=e204]:
+                    - img [ref=e205]
+                    - text: 45.417, 25.467
+                - button [ref=e208]:
+                  - img
+              - generic [ref=e210]:
+                - generic [ref=e211]:
+                  - heading "Cabana Piatra Arsa" [level=4] [ref=e213]
+                  - generic [ref=e214]:
+                    - generic [ref=e215]: hut
+                    - generic [ref=e216]:
+                      - img [ref=e217]
+                      - text: 1950m
+                    - generic [ref=e219]:
+                      - img [ref=e220]
+                      - text: "40"
+                    - generic [ref=e225]: Paid
+                  - generic [ref=e226]:
+                    - img [ref=e227]
+                    - text: 45.400, 25.400
+                - button [ref=e230]:
+                  - img
+              - generic [ref=e232]:
+                - generic [ref=e233]:
+                  - heading "Cabane de Moiry" [level=4] [ref=e235]
+                  - generic [ref=e236]:
+                    - generic [ref=e237]: hut
+                    - generic [ref=e238]:
+                      - img [ref=e239]
+                      - text: 2825m
+                    - generic [ref=e241]:
+                      - img [ref=e242]
+                      - text: "110"
+                    - generic [ref=e247]: Paid
+                  - generic [ref=e248]:
+                    - img [ref=e249]
+                    - text: 46.117, 7.617
+                - button [ref=e252]:
+                  - img
+              - generic [ref=e254]:
+                - generic [ref=e255]:
+                  - heading "Cabane du Mont Fort" [level=4] [ref=e257]
+                  - generic [ref=e258]:
+                    - generic [ref=e259]: hut
+                    - generic [ref=e260]:
+                      - img [ref=e261]
+                      - text: 2457m
+                    - generic [ref=e263]:
+                      - img [ref=e264]
+                      - text: "70"
+                    - generic [ref=e269]: Paid
+                  - generic [ref=e270]:
+                    - img [ref=e271]
+                    - text: 46.083, 7.300
+                - button [ref=e274]:
+                  - img
+              - generic [ref=e276]:
+                - generic [ref=e277]:
+                  - heading "Chamonix Valley Shelter" [level=4] [ref=e279]
+                  - generic [ref=e280]:
+                    - generic [ref=e281]: shelter
+                    - generic [ref=e282]:
+                      - img [ref=e283]
+                      - text: 1600m
+                    - generic [ref=e285]:
+                      - img [ref=e286]
+                      - text: "14"
+                    - generic [ref=e291]: Free
+                  - generic [ref=e292]:
+                    - img [ref=e293]
+                    - text: 45.900, 6.850
+                - button [ref=e296]:
+                  - img
+              - generic [ref=e298]:
+                - generic [ref=e299]:
+                  - heading "Dachstein Hut" [level=4] [ref=e301]
+                  - generic [ref=e302]:
+                    - generic [ref=e303]: hut
+                    - generic [ref=e304]:
+                      - img [ref=e305]
+                      - text: 2741m
+                    - generic [ref=e307]:
+                      - img [ref=e308]
+                      - text: "95"
+                    - generic [ref=e313]: Paid
+                  - generic [ref=e314]:
+                    - img [ref=e315]
+                    - text: 47.550, 13.617
+                - button [ref=e318]:
+                  - img
+              - generic [ref=e320]:
+                - generic [ref=e321]:
+                  - heading "Doldenhornhütte" [level=4] [ref=e323]
+                  - generic [ref=e324]:
+                    - generic [ref=e325]: hut
+                    - generic [ref=e326]:
+                      - img [ref=e327]
+                      - text: 1915m
+                    - generic [ref=e329]:
+                      - img [ref=e330]
+                      - text: "65"
+                    - generic [ref=e335]: Paid
+                  - generic [ref=e336]:
+                    - img [ref=e337]
+                    - text: 46.483, 7.683
+                - button [ref=e340]:
+                  - img
+              - generic [ref=e342]:
+                - generic [ref=e343]:
+                  - heading "Dolomites Emergency Hut" [level=4] [ref=e345]
+                  - generic [ref=e346]:
+                    - generic [ref=e347]: shelter
+                    - generic [ref=e348]:
+                      - img [ref=e349]
+                      - text: 2300m
+                    - generic [ref=e351]:
+                      - img [ref=e352]
+                      - text: "16"
+                    - generic [ref=e357]: Free
+                  - generic [ref=e358]:
+                    - img [ref=e359]
+                    - text: 46.500, 12.000
+                - button [ref=e362]:
+                  - img
+              - generic [ref=e364]:
+                - generic [ref=e365]:
+                  - heading "Dom Planika" [level=4] [ref=e367]
+                  - generic [ref=e368]:
+                    - generic [ref=e369]: hut
+                    - generic [ref=e370]:
+                      - img [ref=e371]
+                      - text: 2401m
+                    - generic [ref=e373]:
+                      - img [ref=e374]
+                      - text: "45"
+                    - generic [ref=e379]: Paid
+                  - generic [ref=e380]:
+                    - img [ref=e381]
+                    - text: 46.367, 13.817
+                - button [ref=e384]:
+                  - img
+              - generic [ref=e386]:
+                - generic [ref=e387]:
+                  - heading "Engadin Emergency Hut" [level=4] [ref=e389]
+                  - generic [ref=e390]:
+                    - generic [ref=e391]: shelter
+                    - generic [ref=e392]:
+                      - img [ref=e393]
+                      - text: 2200m
+                    - generic [ref=e395]:
+                      - img [ref=e396]
+                      - text: "12"
+                    - generic [ref=e401]: Free
+                  - generic [ref=e402]:
+                    - img [ref=e403]
+                    - text: 46.517, 9.817
+                - button [ref=e406]:
+                  - img
+              - generic [ref=e408]:
+                - generic [ref=e409]:
+                  - heading "Fagaras Emergency Shelter" [level=4] [ref=e411]
+                  - generic [ref=e412]:
+                    - generic [ref=e413]: shelter
+                    - generic [ref=e414]:
+                      - img [ref=e415]
+                      - text: 2100m
+                    - generic [ref=e417]:
+                      - img [ref=e418]
+                      - text: "12"
+                    - generic [ref=e423]: Free
+                  - generic [ref=e424]:
+                    - img [ref=e425]
+                    - text: 45.600, 24.700
+                - button [ref=e428]:
+                  - img
+              - generic [ref=e430]:
+                - generic [ref=e431]:
+                  - heading "Franz Senn Hut" [level=4] [ref=e433]
+                  - generic [ref=e434]:
+                    - generic [ref=e435]: hut
+                    - generic [ref=e436]:
+                      - img [ref=e437]
+                      - text: 2147m
+                    - generic [ref=e439]:
+                      - img [ref=e440]
+                      - text: "170"
+                    - generic [ref=e445]: Paid
+                  - generic [ref=e446]:
+                    - img [ref=e447]
+                    - text: 47.083, 11.150
+                - button [ref=e450]:
+                  - img
+              - generic [ref=e452]:
+                - generic [ref=e453]:
+                  - heading "Glorer Hut" [level=4] [ref=e455]
+                  - generic [ref=e456]:
+                    - generic [ref=e457]: hut
+                    - generic [ref=e458]:
+                      - img [ref=e459]
+                      - text: 2651m
+                    - generic [ref=e461]:
+                      - img [ref=e462]
+                      - text: "40"
+                    - generic [ref=e467]: Paid
+                  - generic [ref=e468]:
+                    - img [ref=e469]
+                    - text: 47.100, 12.400
+                - button [ref=e472]:
+                  - img
+              - generic [ref=e474]:
+                - generic [ref=e475]:
+                  - heading "Grialetsch Hut" [level=4] [ref=e477]
+                  - generic [ref=e478]:
+                    - generic [ref=e479]: hut
+                    - generic [ref=e480]:
+                      - img [ref=e481]
+                      - text: 2542m
+                    - generic [ref=e483]:
+                      - img [ref=e484]
+                      - text: "40"
+                    - generic [ref=e489]: Paid
+                  - generic [ref=e490]:
+                    - img [ref=e491]
+                    - text: 46.833, 10.083
+                - button [ref=e494]:
+                  - img
+              - generic [ref=e496]:
+                - generic [ref=e497]:
+                  - heading "Hochschober Hut" [level=4] [ref=e499]
+                  - generic [ref=e500]:
+                    - generic [ref=e501]: hut
+                    - generic [ref=e502]:
+                      - img [ref=e503]
+                      - text: 2322m
+                    - generic [ref=e505]:
+                      - img [ref=e506]
+                      - text: "60"
+                    - generic [ref=e511]: Paid
+                  - generic [ref=e512]:
+                    - img [ref=e513]
+                    - text: 47.067, 12.333
+                - button [ref=e516]:
+                  - img
+              - generic [ref=e518]:
+                - generic [ref=e519]:
+                  - heading "Julian Alps Shelter" [level=4] [ref=e521]
+                  - generic [ref=e522]:
+                    - generic [ref=e523]: shelter
+                    - generic [ref=e524]:
+                      - img [ref=e525]
+                      - text: 1950m
+                    - generic [ref=e527]:
+                      - img [ref=e528]
+                      - text: "18"
+                    - generic [ref=e533]: Free
+                  - generic [ref=e534]:
+                    - img [ref=e535]
+                    - text: 46.400, 13.700
+                - button [ref=e538]:
+                  - img
+              - generic [ref=e540]:
+                - generic [ref=e541]:
+                  - heading "Kärlingerhaus" [level=4] [ref=e543]
+                  - generic [ref=e544]:
+                    - generic [ref=e545]: hut
+                    - generic [ref=e546]:
+                      - img [ref=e547]
+                      - text: 1631m
+                    - generic [ref=e549]:
+                      - img [ref=e550]
+                      - text: "80"
+                    - generic [ref=e555]: Paid
+                  - generic [ref=e556]:
+                    - img [ref=e557]
+                    - text: 47.583, 12.883
+                - button [ref=e560]:
+                  - img
+              - generic [ref=e562]:
+                - generic [ref=e563]:
+                  - heading "Kitzsteinhorn Hut" [level=4] [ref=e565]
+                  - generic [ref=e566]:
+                    - generic [ref=e567]: hut
+                    - generic [ref=e568]:
+                      - img [ref=e569]
+                      - text: 2261m
+                    - generic [ref=e571]:
+                      - img [ref=e572]
+                      - text: "45"
+                    - generic [ref=e577]: Paid
+                  - generic [ref=e578]:
+                    - img [ref=e579]
+                    - text: 47.183, 12.733
+                - button [ref=e582]:
+                  - img
+              - generic [ref=e584]:
+                - generic [ref=e585]:
+                  - heading "Knorrhütte" [level=4] [ref=e587]
+                  - generic [ref=e588]:
+                    - generic [ref=e589]: hut
+                    - generic [ref=e590]:
+                      - img [ref=e591]
+                      - text: 2051m
+                    - generic [ref=e593]:
+                      - img [ref=e594]
+                      - text: "65"
+                    - generic [ref=e599]: Paid
+                  - generic [ref=e600]:
+                    - img [ref=e601]
+                    - text: 47.400, 11.067
+                - button [ref=e604]:
+                  - img
+              - generic [ref=e606]:
+                - generic [ref=e607]:
+                  - heading "Kredarica Hut" [level=4] [ref=e609]
+                  - generic [ref=e610]:
+                    - generic [ref=e611]: hut
+                    - generic [ref=e612]:
+                      - img [ref=e613]
+                      - text: 2515m
+                    - generic [ref=e615]:
+                      - img [ref=e616]
+                      - text: "180"
+                    - generic [ref=e621]: Paid
+                  - generic [ref=e622]:
+                    - img [ref=e623]
+                    - text: 46.378, 13.842
+                - button [ref=e626]:
+                  - img
+              - generic [ref=e628]:
+                - generic [ref=e629]:
+                  - heading "Matterhorn Hut" [level=4] [ref=e631]
+                  - generic [ref=e632]:
+                    - generic [ref=e633]: hut
+                    - generic [ref=e634]:
+                      - img [ref=e635]
+                      - text: 3260m
+                    - generic [ref=e637]:
+                      - img [ref=e638]
+                      - text: "80"
+                    - generic [ref=e643]: Paid
+                  - generic [ref=e644]:
+                    - img [ref=e645]
+                    - text: 45.976, 7.658
+                - button [ref=e648]:
+                  - img
+              - generic [ref=e650]:
+                - generic [ref=e651]:
+                  - heading "Mont Blanc Emergency Hut" [level=4] [ref=e653]
+                  - generic [ref=e654]:
+                    - generic [ref=e655]: shelter
+                    - generic [ref=e656]:
+                      - img [ref=e657]
+                      - text: 2800m
+                    - generic [ref=e659]:
+                      - img [ref=e660]
+                      - text: "8"
+                    - generic [ref=e665]: Free
+                  - generic [ref=e666]:
+                    - img [ref=e667]
+                    - text: 45.830, 6.800
+                - button [ref=e670]:
+                  - img
+              - generic [ref=e672]:
+                - generic [ref=e673]:
+                  - heading "Monte Rosa Hut" [level=4] [ref=e675]
+                  - generic [ref=e676]:
+                    - generic [ref=e677]: hut
+                    - generic [ref=e678]:
+                      - img [ref=e679]
+                      - text: 2883m
+                    - generic [ref=e681]:
+                      - img [ref=e682]
+                      - text: "130"
+                    - generic [ref=e687]: Paid
+                  - generic [ref=e688]:
+                    - img [ref=e689]
+                    - text: 45.920, 7.867
+                - button [ref=e692]:
+                  - img
+              - generic [ref=e694]:
+                - generic [ref=e695]:
+                  - heading "Münchner Haus" [level=4] [ref=e697]
+                  - generic [ref=e698]:
+                    - generic [ref=e699]: hut
+                    - generic [ref=e700]:
+                      - img [ref=e701]
+                      - text: 2959m
+                    - generic [ref=e703]:
+                      - img [ref=e704]
+                      - text: "108"
+                    - generic [ref=e709]: Paid
+                  - generic [ref=e710]:
+                    - img [ref=e711]
+                    - text: 47.417, 10.983
+                - button [ref=e714]:
+                  - img
+              - generic [ref=e716]:
+                - generic [ref=e717]:
+                  - heading "Ötztal Emergency Hut" [level=4] [ref=e719]
+                  - generic [ref=e720]:
+                    - generic [ref=e721]: shelter
+                    - generic [ref=e722]:
+                      - img [ref=e723]
+                      - text: 2800m
+                    - generic [ref=e725]:
+                      - img [ref=e726]
+                      - text: "8"
+                    - generic [ref=e731]: Free
+                  - generic [ref=e732]:
+                    - img [ref=e733]
+                    - text: 46.900, 10.900
+                - button [ref=e736]:
+                  - img
+              - generic [ref=e738]:
+                - generic [ref=e739]:
+                  - heading "Piedmont Valley Shelter" [level=4] [ref=e741]
+                  - generic [ref=e742]:
+                    - generic [ref=e743]: shelter
+                    - generic [ref=e744]:
+                      - img [ref=e745]
+                      - text: 1800m
+                    - generic [ref=e747]:
+                      - img [ref=e748]
+                      - text: "10"
+                    - generic [ref=e753]: Free
+                  - generic [ref=e754]:
+                    - img [ref=e755]
+                    - text: 45.500, 7.200
+                - button [ref=e758]:
+                  - img
+              - generic [ref=e760]:
+                - generic [ref=e761]:
+                  - heading "Pyrenees Valley Shelter" [level=4] [ref=e763]
+                  - generic [ref=e764]:
+                    - generic [ref=e765]: shelter
+                    - generic [ref=e766]:
+                      - img [ref=e767]
+                      - text: 1650m
+                    - generic [ref=e769]:
+                      - img [ref=e770]
+                      - text: "15"
+                    - generic [ref=e775]: Free
+                  - generic [ref=e776]:
+                    - img [ref=e777]
+                    - text: 42.800, 0.500
+                - button [ref=e780]:
+                  - img
+              - generic [ref=e782]:
+                - generic [ref=e783]:
+                  - heading "Refuge Albert Premier" [level=4] [ref=e785]
+                  - generic [ref=e786]:
+                    - generic [ref=e787]: hut
+                    - generic [ref=e788]:
+                      - img [ref=e789]
+                      - text: 2702m
+                    - generic [ref=e791]:
+                      - img [ref=e792]
+                      - text: "110"
+                    - generic [ref=e797]: Paid
+                  - generic [ref=e798]:
+                    - img [ref=e799]
+                    - text: 46.000, 7.033
+                - button [ref=e802]:
+                  - img
+              - generic [ref=e804]:
+                - generic [ref=e805]:
+                  - heading "Refuge d'Espingo" [level=4] [ref=e807]
+                  - generic [ref=e808]:
+                    - generic [ref=e809]: hut
+                    - generic [ref=e810]:
+                      - img [ref=e811]
+                      - text: 1967m
+                    - generic [ref=e813]:
+                      - img [ref=e814]
+                      - text: "45"
+                    - generic [ref=e819]: Paid
+                  - generic [ref=e820]:
+                    - img [ref=e821]
+                    - text: 42.783, 0.533
+                - button [ref=e824]:
+                  - img
+              - generic [ref=e826]:
+                - generic [ref=e827]:
+                  - heading "Refuge de l'Aigle" [level=4] [ref=e829]
+                  - generic [ref=e830]:
+                    - generic [ref=e831]: hut
+                    - generic [ref=e832]:
+                      - img [ref=e833]
+                      - text: 3450m
+                    - generic [ref=e835]:
+                      - img [ref=e836]
+                      - text: "35"
+                    - generic [ref=e841]: Paid
+                  - generic [ref=e842]:
+                    - img [ref=e843]
+                    - text: 45.950, 6.900
+                - button [ref=e846]:
+                  - img
+              - generic [ref=e848]:
+                - generic [ref=e849]:
+                  - heading "Refuge de Tête Rousse" [level=4] [ref=e851]
+                  - generic [ref=e852]:
+                    - generic [ref=e853]: hut
+                    - generic [ref=e854]:
+                      - img [ref=e855]
+                      - text: 3167m
+                    - generic [ref=e857]:
+                      - img [ref=e858]
+                      - text: "70"
+                    - generic [ref=e863]: Paid
+                  - generic [ref=e864]:
+                    - img [ref=e865]
+                    - text: 45.833, 6.800
+                - button [ref=e868]:
+                  - img
+              - generic [ref=e870]:
+                - generic [ref=e871]:
+                  - heading "Refuge des Cosmiques" [level=4] [ref=e873]
+                  - generic [ref=e874]:
+                    - generic [ref=e875]: hut
+                    - generic [ref=e876]:
+                      - img [ref=e877]
+                      - text: 3613m
+                    - generic [ref=e879]:
+                      - img [ref=e880]
+                      - text: "148"
+                    - generic [ref=e885]: Paid
+                  - generic [ref=e886]:
+                    - img [ref=e887]
+                    - text: 45.867, 6.883
+                - button [ref=e890]:
+                  - img
+              - generic [ref=e892]:
+                - generic [ref=e893]:
+                  - heading "Refuge des Dix" [level=4] [ref=e895]
+                  - generic [ref=e896]:
+                    - generic [ref=e897]: hut
+                    - generic [ref=e898]:
+                      - img [ref=e899]
+                      - text: 2928m
+                    - generic [ref=e901]:
+                      - img [ref=e902]
+                      - text: "120"
+                    - generic [ref=e907]: Paid
+                  - generic [ref=e908]:
+                    - img [ref=e909]
+                    - text: 46.017, 7.533
+                - button [ref=e912]:
+                  - img
+              - generic [ref=e914]:
+                - generic [ref=e915]:
+                  - heading "Refuge des Oulettes" [level=4] [ref=e917]
+                  - generic [ref=e918]:
+                    - generic [ref=e919]: hut
+                    - generic [ref=e920]:
+                      - img [ref=e921]
+                      - text: 3100m
+                    - generic [ref=e923]:
+                      - img [ref=e924]
+                      - text: "55"
+                    - generic [ref=e929]: Paid
+                  - generic [ref=e930]:
+                    - img [ref=e931]
+                    - text: 42.917, -0.183
+                - button [ref=e934]:
+                  - img
+              - generic [ref=e936]:
+                - generic [ref=e937]:
+                  - heading "Refuge du Goûter" [level=4] [ref=e939]
+                  - generic [ref=e940]:
+                    - generic [ref=e941]: hut
+                    - generic [ref=e942]:
+                      - img [ref=e943]
+                      - text: 3835m
+                    - generic [ref=e945]:
+                      - img [ref=e946]
+                      - text: "120"
+                    - generic [ref=e951]: Paid
+                  - generic [ref=e952]:
+                    - img [ref=e953]
+                    - text: 45.850, 6.817
+                - button [ref=e956]:
+                  - img
+              - generic [ref=e958]:
+                - generic [ref=e959]:
+                  - heading "Refuge du Nid d'Aigle" [level=4] [ref=e961]
+                  - generic [ref=e962]:
+                    - generic [ref=e963]: hut
+                    - generic [ref=e964]:
+                      - img [ref=e965]
+                      - text: 2372m
+                    - generic [ref=e967]:
+                      - img [ref=e968]
+                      - text: "40"
+                    - generic [ref=e973]: Paid
+                  - generic [ref=e974]:
+                    - img [ref=e975]
+                    - text: 45.817, 6.783
+                - button [ref=e978]:
+                  - img
+              - generic [ref=e980]:
+                - generic [ref=e981]:
+                  - heading "Refuge du Plan" [level=4] [ref=e983]
+                  - generic [ref=e984]:
+                    - generic [ref=e985]: hut
+                    - generic [ref=e986]:
+                      - img [ref=e987]
+                      - text: 2050m
+                    - generic [ref=e989]:
+                      - img [ref=e990]
+                      - text: "50"
+                    - generic [ref=e995]: Paid
+                  - generic [ref=e996]:
+                    - img [ref=e997]
+                    - text: 45.917, 6.917
+                - button [ref=e1000]:
+                  - img
+              - generic [ref=e1002]:
+                - generic [ref=e1003]:
+                  - heading "Refugio Angel Orus" [level=4] [ref=e1005]
+                  - generic [ref=e1006]:
+                    - generic [ref=e1007]: hut
+                    - generic [ref=e1008]:
+                      - img [ref=e1009]
+                      - text: 2100m
+                    - generic [ref=e1011]:
+                      - img [ref=e1012]
+                      - text: "70"
+                    - generic [ref=e1017]: Paid
+                  - generic [ref=e1018]:
+                    - img [ref=e1019]
+                    - text: 42.700, 0.667
+                - button [ref=e1022]:
+                  - img
+              - generic [ref=e1024]:
+                - generic [ref=e1025]:
+                  - heading "Refugio de Goriz" [level=4] [ref=e1027]
+                  - generic [ref=e1028]:
+                    - generic [ref=e1029]: hut
+                    - generic [ref=e1030]:
+                      - img [ref=e1031]
+                      - text: 2200m
+                    - generic [ref=e1033]:
+                      - img [ref=e1034]
+                      - text: "90"
+                    - generic [ref=e1039]: Paid
+                  - generic [ref=e1040]:
+                    - img [ref=e1041]
+                    - text: 42.667, -0.033
+                - button [ref=e1044]:
+                  - img
+              - generic [ref=e1046]:
+                - generic [ref=e1047]:
+                  - heading "Retezat Mountain Hut" [level=4] [ref=e1049]
+                  - generic [ref=e1050]:
+                    - generic [ref=e1051]: hut
+                    - generic [ref=e1052]:
+                      - img [ref=e1053]
+                      - text: 2040m
+                    - generic [ref=e1055]:
+                      - img [ref=e1056]
+                      - text: "35"
+                    - generic [ref=e1061]: Paid
+                  - generic [ref=e1062]:
+                    - img [ref=e1063]
+                    - text: 45.367, 22.883
+                - button [ref=e1066]:
+                  - img
+              - generic [ref=e1068]:
+                - generic [ref=e1069]:
+                  - heading "Rifugio Benevolo" [level=4] [ref=e1071]
+                  - generic [ref=e1072]:
+                    - generic [ref=e1073]: hut
+                    - generic [ref=e1074]:
+                      - img [ref=e1075]
+                      - text: 2285m
+                    - generic [ref=e1077]:
+                      - img [ref=e1078]
+                      - text: "50"
+                    - generic [ref=e1083]: Paid
+                  - generic [ref=e1084]:
+                    - img [ref=e1085]
+                    - text: 45.667, 7.333
+                - button [ref=e1088]:
+                  - img
+              - generic [ref=e1090]:
+                - generic [ref=e1091]:
+                  - heading "Rifugio Coda" [level=4] [ref=e1093]
+                  - generic [ref=e1094]:
+                    - generic [ref=e1095]: hut
+                    - generic [ref=e1096]:
+                      - img [ref=e1097]
+                      - text: 2280m
+                    - generic [ref=e1099]:
+                      - img [ref=e1100]
+                      - text: "30"
+                    - generic [ref=e1105]: Paid
+                  - generic [ref=e1106]:
+                    - img [ref=e1107]
+                    - text: 45.800, 7.100
+                - button [ref=e1110]:
+                  - img
+              - generic [ref=e1112]:
+                - generic [ref=e1113]:
+                  - heading "Rifugio Elisabetta" [level=4] [ref=e1115]
+                  - generic [ref=e1116]:
+                    - generic [ref=e1117]: hut
+                    - generic [ref=e1118]:
+                      - img [ref=e1119]
+                      - text: 2195m
+                    - generic [ref=e1121]:
+                      - img [ref=e1122]
+                      - text: "40"
+                    - generic [ref=e1127]: Paid
+                  - generic [ref=e1128]:
+                    - img [ref=e1129]
+                    - text: 45.783, 6.950
+                - button [ref=e1132]:
+                  - img
+              - generic [ref=e1134]:
+                - generic [ref=e1135]:
+                  - heading "Rifugio Gonella" [level=4] [ref=e1137]
+                  - generic [ref=e1138]:
+                    - generic [ref=e1139]: hut
+                    - generic [ref=e1140]:
+                      - img [ref=e1141]
+                      - text: 3071m
+                    - generic [ref=e1143]:
+                      - img [ref=e1144]
+                      - text: "55"
+                    - generic [ref=e1149]: Paid
+                  - generic [ref=e1150]:
+                    - img [ref=e1151]
+                    - text: 45.817, 6.917
+                - button [ref=e1154]:
+                  - img
+              - generic [ref=e1156]:
+                - generic [ref=e1157]:
+                  - heading "Rifugio Quintino Sella" [level=4] [ref=e1159]
+                  - generic [ref=e1160]:
+                    - generic [ref=e1161]: hut
+                    - generic [ref=e1162]:
+                      - img [ref=e1163]
+                      - text: 3585m
+                    - generic [ref=e1165]:
+                      - img [ref=e1166]
+                      - text: "85"
+                    - generic [ref=e1171]: Paid
+                  - generic [ref=e1172]:
+                    - img [ref=e1173]
+                    - text: 45.933, 7.883
+                - button [ref=e1176]:
+                  - img
+              - generic [ref=e1178]:
+                - generic [ref=e1179]:
+                  - heading "Rifugio Torino" [level=4] [ref=e1181]
+                  - generic [ref=e1182]:
+                    - generic [ref=e1183]: hut
+                    - generic [ref=e1184]:
+                      - img [ref=e1185]
+                      - text: 3375m
+                    - generic [ref=e1187]:
+                      - img [ref=e1188]
+                      - text: "75"
+                    - generic [ref=e1193]: Paid
+                  - generic [ref=e1194]:
+                    - img [ref=e1195]
+                    - text: 45.850, 6.883
+                - button [ref=e1198]:
+                  - img
+              - generic [ref=e1200]:
+                - generic [ref=e1201]:
+                  - heading "Rifugio Vittorio Sella" [level=4] [ref=e1203]
+                  - generic [ref=e1204]:
+                    - generic [ref=e1205]: hut
+                    - generic [ref=e1206]:
+                      - img [ref=e1207]
+                      - text: 2584m
+                    - generic [ref=e1209]:
+                      - img [ref=e1210]
+                      - text: "65"
+                    - generic [ref=e1215]: Paid
+                  - generic [ref=e1216]:
+                    - img [ref=e1217]
+                    - text: 45.917, 7.867
+                - button [ref=e1220]:
+                  - img
+              - generic [ref=e1222]:
+                - generic [ref=e1223]:
+                  - heading "Rotondo Hut" [level=4] [ref=e1225]
+                  - generic [ref=e1226]:
+                    - generic [ref=e1227]: hut
+                    - generic [ref=e1228]:
+                      - img [ref=e1229]
+                      - text: 2570m
+                    - generic [ref=e1231]:
+                      - img [ref=e1232]
+                      - text: "60"
+                    - generic [ref=e1237]: Paid
+                  - generic [ref=e1238]:
+                    - img [ref=e1239]
+                    - text: 46.533, 8.433
+                - button [ref=e1242]:
+                  - img
+              - generic [ref=e1244]:
+                - generic [ref=e1245]:
+                  - heading "Salzburg Alpine Shelter" [level=4] [ref=e1247]
+                  - generic [ref=e1248]:
+                    - generic [ref=e1249]: shelter
+                    - generic [ref=e1250]:
+                      - img [ref=e1251]
+                      - text: 1900m
+                    - generic [ref=e1253]:
+                      - img [ref=e1254]
+                      - text: "18"
+                    - generic [ref=e1259]: Free
+                  - generic [ref=e1260]:
+                    - img [ref=e1261]
+                    - text: 47.400, 13.200
+                - button [ref=e1264]:
+                  - img
+              - generic [ref=e1266]:
+                - generic [ref=e1267]:
+                  - heading "Savoy Alpine Shelter" [level=4] [ref=e1269]
+                  - generic [ref=e1270]:
+                    - generic [ref=e1271]: shelter
+                    - generic [ref=e1272]:
+                      - img [ref=e1273]
+                      - text: 1900m
+                    - generic [ref=e1275]:
+                      - img [ref=e1276]
+                      - text: "20"
+                    - generic [ref=e1281]: Free
+                  - generic [ref=e1282]:
+                    - img [ref=e1283]
+                    - text: 45.700, 6.700
+                - button [ref=e1286]:
+                  - img
+              - generic [ref=e1288]:
+                - generic [ref=e1289]:
+                  - heading "Schneefernerhaus" [level=4] [ref=e1291]
+                  - generic [ref=e1292]:
+                    - generic [ref=e1293]: hut
+                    - generic [ref=e1294]:
+                      - img [ref=e1295]
+                      - text: 2650m
+                    - generic [ref=e1297]:
+                      - img [ref=e1298]
+                      - text: "45"
+                    - generic [ref=e1303]: Paid
+                  - generic [ref=e1304]:
+                    - img [ref=e1305]
+                    - text: 47.417, 10.983
+                - button [ref=e1308]:
+                  - img
+              - generic [ref=e1310]:
+                - generic [ref=e1311]:
+                  - heading "Similaun Hut" [level=4] [ref=e1313]
+                  - generic [ref=e1314]:
+                    - generic [ref=e1315]: hut
+                    - generic [ref=e1316]:
+                      - img [ref=e1317]
+                      - text: 3019m
+                    - generic [ref=e1319]:
+                      - img [ref=e1320]
+                      - text: "80"
+                    - generic [ref=e1325]: Paid
+                  - generic [ref=e1326]:
+                    - img [ref=e1327]
+                    - text: 46.783, 10.867
+                - button [ref=e1330]:
+                  - img
+              - generic [ref=e1332]:
+                - generic [ref=e1333]:
+                  - heading "Tatra Emergency Shelter" [level=4] [ref=e1335]
+                  - generic [ref=e1336]:
+                    - generic [ref=e1337]: shelter
+                    - generic [ref=e1338]:
+                      - img [ref=e1339]
+                      - text: 2000m
+                    - generic [ref=e1341]:
+                      - img [ref=e1342]
+                      - text: "8"
+                    - generic [ref=e1347]: Free
+                  - generic [ref=e1348]:
+                    - img [ref=e1349]
+                    - text: 49.200, 20.000
+                - button [ref=e1352]:
+                  - img
+              - generic [ref=e1354]:
+                - generic [ref=e1355]:
+                  - heading "Triglav Hut" [level=4] [ref=e1357]
+                  - generic [ref=e1358]:
+                    - generic [ref=e1359]: hut
+                    - generic [ref=e1360]:
+                      - img [ref=e1361]
+                      - text: 2864m
+                    - generic [ref=e1363]:
+                      - img [ref=e1364]
+                      - text: "65"
+                    - generic [ref=e1369]: Paid
+                  - generic [ref=e1370]:
+                    - img [ref=e1371]
+                    - text: 46.383, 13.833
+                - button [ref=e1374]:
+                  - img
+              - generic [ref=e1376]:
+                - generic [ref=e1377]:
+                  - heading "Tyrol Valley Shelter" [level=4] [ref=e1379]
+                  - generic [ref=e1380]:
+                    - generic [ref=e1381]: shelter
+                    - generic [ref=e1382]:
+                      - img [ref=e1383]
+                      - text: 1650m
+                    - generic [ref=e1385]:
+                      - img [ref=e1386]
+                      - text: "15"
+                    - generic [ref=e1391]: Free
+                  - generic [ref=e1392]:
+                    - img [ref=e1393]
+                    - text: 47.200, 11.800
+                - button [ref=e1396]:
+                  - img
+              - generic [ref=e1398]:
+                - generic [ref=e1399]:
+                  - heading "Val d'Aosta Shelter" [level=4] [ref=e1401]
+                  - generic [ref=e1402]:
+                    - generic [ref=e1403]: shelter
+                    - generic [ref=e1404]:
+                      - img [ref=e1405]
+                      - text: 2100m
+                    - generic [ref=e1407]:
+                      - img [ref=e1408]
+                      - text: "12"
+                    - generic [ref=e1413]: Free
+                  - generic [ref=e1414]:
+                    - img [ref=e1415]
+                    - text: 45.700, 7.400
+                - button [ref=e1418]:
+                  - img
+              - generic [ref=e1420]:
+                - generic [ref=e1421]:
+                  - heading "Val Müstair Shelter" [level=4] [ref=e1423]
+                  - generic [ref=e1424]:
+                    - generic [ref=e1425]: shelter
+                    - generic [ref=e1426]:
+                      - img [ref=e1427]
+                      - text: 1800m
+                    - generic [ref=e1429]:
+                      - img [ref=e1430]
+                      - text: "20"
+                    - generic [ref=e1435]: Free
+                  - generic [ref=e1436]:
+                    - img [ref=e1437]
+                    - text: 46.600, 10.433
+                - button [ref=e1440]:
+                  - img
+              - generic [ref=e1442]:
+                - generic [ref=e1443]:
+                  - heading "Vipava Valley Shelter" [level=4] [ref=e1445]
+                  - generic [ref=e1446]:
+                    - generic [ref=e1447]: shelter
+                    - generic [ref=e1448]:
+                      - img [ref=e1449]
+                      - text: 1600m
+                    - generic [ref=e1451]:
+                      - img [ref=e1452]
+                      - text: "14"
+                    - generic [ref=e1457]: Free
+                  - generic [ref=e1458]:
+                    - img [ref=e1459]
+                    - text: 46.000, 14.000
+                - button [ref=e1462]:
+                  - img
+              - generic [ref=e1464]:
+                - generic [ref=e1465]:
+                  - heading "Vodnikov Dom" [level=4] [ref=e1467]
+                  - generic [ref=e1468]:
+                    - generic [ref=e1469]: hut
+                    - generic [ref=e1470]:
+                      - img [ref=e1471]
+                      - text: 1817m
+                    - generic [ref=e1473]:
+                      - img [ref=e1474]
+                      - text: "70"
+                    - generic [ref=e1479]: Paid
+                  - generic [ref=e1480]:
+                    - img [ref=e1481]
+                    - text: 46.350, 13.800
+                - button [ref=e1484]:
+                  - img
+              - generic [ref=e1486]:
+                - generic [ref=e1487]:
+                  - heading "Vosges Mountain Hut" [level=4] [ref=e1489]
+                  - generic [ref=e1490]:
+                    - generic [ref=e1491]: hut
+                    - generic [ref=e1492]:
+                      - img [ref=e1493]
+                      - text: 1350m
+                    - generic [ref=e1495]:
+                      - img [ref=e1496]
+                      - text: "30"
+                    - generic [ref=e1501]: Paid
+                  - generic [ref=e1502]:
+                    - img [ref=e1503]
+                    - text: 48.100, 7.000
+                - button [ref=e1506]:
+                  - img
+              - generic [ref=e1508]:
+                - generic [ref=e1509]:
+                  - heading "Warnsdorfer Hut" [level=4] [ref=e1511]
+                  - generic [ref=e1512]:
+                    - generic [ref=e1513]: hut
+                    - generic [ref=e1514]:
+                      - img [ref=e1515]
+                      - text: 2336m
+                    - generic [ref=e1517]:
+                      - img [ref=e1518]
+                      - text: "55"
+                    - generic [ref=e1523]: Paid
+                  - generic [ref=e1524]:
+                    - img [ref=e1525]
+                    - text: 47.017, 12.933
+                - button [ref=e1528]:
+                  - img
+              - generic [ref=e1530]:
+                - generic [ref=e1531]:
+                  - heading "Watzmannhaus" [level=4] [ref=e1533]
+                  - generic [ref=e1534]:
+                    - generic [ref=e1535]: hut
+                    - generic [ref=e1536]:
+                      - img [ref=e1537]
+                      - text: 1930m
+                    - generic [ref=e1539]:
+                      - img [ref=e1540]
+                      - text: "90"
+                    - generic [ref=e1545]: Paid
+                  - generic [ref=e1546]:
+                    - img [ref=e1547]
+                    - text: 47.567, 12.917
+                - button [ref=e1550]:
+                  - img
+        - generic [ref=e1552]:
+          - generic [ref=e1553]:
+            - generic [ref=e1554]:
+              - img [ref=e1555]
+              - text: Trip Planner
+            - generic [ref=e1559]: Select shelters to start planning your trip
+          - generic [ref=e1561]:
+            - img [ref=e1562]
+            - paragraph [ref=e1566]: Choose at least 2 shelters to see your trip stages
+  - region "Notifications alt+T"
+```

@@ -1,0 +1,48 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e4]:
+      - link "Sheltr" [ref=e6] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e8]:
+        - link "Map" [ref=e9] [cursor=pointer]:
+          - /url: /map
+        - link "Discover" [ref=e10] [cursor=pointer]:
+          - /url: /discover
+        - link "Trip Builder" [ref=e11] [cursor=pointer]:
+          - /url: /trip-builder
+        - link "Emergency" [ref=e12] [cursor=pointer]:
+          - /url: /emergency
+      - generic [ref=e13]:
+        - link "Sign In" [ref=e14] [cursor=pointer]:
+          - /url: /login
+        - link "Sign Up" [ref=e15] [cursor=pointer]:
+          - /url: /register
+  - main [ref=e16]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]: Create Account
+        - generic [ref=e21]: Sign up to start exploring mountain shelters
+      - generic [ref=e22]:
+        - generic [ref=e23]:
+          - generic [ref=e24]:
+            - generic [ref=e25]: Name
+            - textbox "Name" [ref=e26]
+          - generic [ref=e27]:
+            - generic [ref=e28]: Email
+            - textbox "Email" [ref=e29]
+          - generic [ref=e30]:
+            - generic [ref=e31]: Password
+            - textbox "Password" [ref=e32]
+          - button "Create Account" [ref=e33]
+        - generic [ref=e34]:
+          - text: Already have an account?
+          - link "Sign in" [ref=e35] [cursor=pointer]:
+            - /url: /login
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e41] [cursor=pointer]:
+    - img [ref=e42] [cursor=pointer]
+  - alert [ref=e45]
+```

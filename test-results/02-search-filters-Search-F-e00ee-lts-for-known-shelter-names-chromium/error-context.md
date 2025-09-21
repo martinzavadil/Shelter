@@ -1,0 +1,1741 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e4]:
+      - link "Sheltr" [ref=e6] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e8]:
+        - link "Map" [ref=e9] [cursor=pointer]:
+          - /url: /map
+        - link "Discover" [ref=e10] [cursor=pointer]:
+          - /url: /discover
+        - link "Trip Builder" [ref=e11] [cursor=pointer]:
+          - /url: /trip-builder
+        - link "Emergency" [ref=e12] [cursor=pointer]:
+          - /url: /emergency
+      - generic [ref=e13]:
+        - link "Sign In" [ref=e14] [cursor=pointer]:
+          - /url: /login
+        - link "Sign Up" [ref=e15] [cursor=pointer]:
+          - /url: /register
+  - main [ref=e16]:
+    - generic [ref=e18]:
+      - button "Filters" [ref=e20]:
+        - img
+        - text: Filters
+      - generic [ref=e21]:
+        - generic [ref=e22]:
+          - generic:
+            - generic:
+              - button "Marker" [ref=e23] [cursor=pointer]
+              - button "5" [ref=e24] [cursor=pointer]:
+                - generic [ref=e25] [cursor=pointer]: "5"
+              - button "6" [ref=e26] [cursor=pointer]:
+                - generic [ref=e27] [cursor=pointer]: "6"
+              - button "Marker" [ref=e28] [cursor=pointer]
+              - button "26" [ref=e29] [cursor=pointer]:
+                - generic [ref=e30] [cursor=pointer]: "26"
+              - button "10" [ref=e31] [cursor=pointer]:
+                - generic [ref=e32] [cursor=pointer]: "10"
+              - button "2" [ref=e33] [cursor=pointer]:
+                - generic [ref=e34] [cursor=pointer]: "2"
+              - button "18" [ref=e35] [cursor=pointer]:
+                - generic [ref=e36] [cursor=pointer]: "18"
+          - generic:
+            - generic [ref=e37]:
+              - button "Zoom in" [ref=e38] [cursor=pointer]:
+                - generic [ref=e39] [cursor=pointer]: +
+              - button "Zoom out" [ref=e40] [cursor=pointer]:
+                - generic [ref=e41] [cursor=pointer]: −
+            - generic [ref=e42]:
+              - link "Leaflet" [ref=e43] [cursor=pointer]:
+                - /url: https://leafletjs.com
+                - img [ref=e44] [cursor=pointer]
+                - text: Leaflet
+              - generic [ref=e48]: "|"
+              - text: ©
+              - link "OpenStreetMap" [ref=e49] [cursor=pointer]:
+                - /url: https://www.openstreetmap.org/copyright
+              - text: contributors
+        - generic [ref=e51]:
+          - generic [ref=e52]:
+            - generic [ref=e53]:
+              - img [ref=e54]
+              - text: GPX Routes
+            - generic [ref=e58]: Import GPX tracks or export current route
+          - generic [ref=e59]:
+            - generic [ref=e60]:
+              - button "Choose File" [ref=e61] [cursor=pointer]
+              - button "Import GPX File" [ref=e62]:
+                - img
+                - text: Import GPX File
+            - button "Export Current Route" [disabled]:
+              - img
+              - text: Export Current Route
+      - generic [ref=e64]:
+        - heading "69 Results" [level=3] [ref=e66]
+        - generic [ref=e68]:
+          - generic [ref=e69]:
+            - heading "Aragon Emergency Hut" [level=4] [ref=e70]:
+              - link "Aragon Emergency Hut" [ref=e71] [cursor=pointer]:
+                - /url: /shelter/dbcc3d88-1178-4c5b-8f6e-3deb7453d9f3
+            - generic [ref=e72]:
+              - generic [ref=e73]: Free
+              - generic [ref=e74]: shelter
+          - generic [ref=e75]:
+            - generic [ref=e76]:
+              - img [ref=e77]
+              - generic [ref=e82]: "10"
+            - generic [ref=e83]:
+              - img [ref=e84]
+              - generic [ref=e86]: 1950m
+            - generic [ref=e87]:
+              - img [ref=e88]
+              - generic [ref=e91]: 42.650, -0.200
+          - generic [ref=e92]:
+            - generic [ref=e93]:
+              - img [ref=e94]
+              - generic [ref=e96]: No reviews yet
+            - link "View Details" [ref=e97] [cursor=pointer]:
+              - /url: /shelter/dbcc3d88-1178-4c5b-8f6e-3deb7453d9f3
+        - generic [ref=e99]:
+          - generic [ref=e100]:
+            - heading "Bavaria Mountain Shelter" [level=4] [ref=e101]:
+              - link "Bavaria Mountain Shelter" [ref=e102] [cursor=pointer]:
+                - /url: /shelter/14bd0dba-3085-4ae8-8bfd-bd767cdaef44
+            - generic [ref=e103]:
+              - generic [ref=e104]: Free
+              - generic [ref=e105]: shelter
+          - generic [ref=e106]:
+            - generic [ref=e107]:
+              - img [ref=e108]
+              - generic [ref=e113]: "16"
+            - generic [ref=e114]:
+              - img [ref=e115]
+              - generic [ref=e117]: 1700m
+            - generic [ref=e118]:
+              - img [ref=e119]
+              - generic [ref=e122]: 47.500, 12.500
+          - generic [ref=e123]:
+            - generic [ref=e124]:
+              - img [ref=e125]
+              - generic [ref=e127]: No reviews yet
+            - link "View Details" [ref=e128] [cursor=pointer]:
+              - /url: /shelter/14bd0dba-3085-4ae8-8bfd-bd767cdaef44
+        - generic [ref=e130]:
+          - generic [ref=e131]:
+            - heading "Berchtesgaden Emergency Hut" [level=4] [ref=e132]:
+              - link "Berchtesgaden Emergency Hut" [ref=e133] [cursor=pointer]:
+                - /url: /shelter/9b03232a-0ddd-4f14-b99b-6c3a4f8787a1
+            - generic [ref=e134]:
+              - generic [ref=e135]: Free
+              - generic [ref=e136]: shelter
+          - generic [ref=e137]:
+            - generic [ref=e138]:
+              - img [ref=e139]
+              - generic [ref=e144]: "12"
+            - generic [ref=e145]:
+              - img [ref=e146]
+              - generic [ref=e148]: 1850m
+            - generic [ref=e149]:
+              - img [ref=e150]
+              - generic [ref=e153]: 47.600, 13.000
+          - generic [ref=e154]:
+            - generic [ref=e155]:
+              - img [ref=e156]
+              - generic [ref=e158]: No reviews yet
+            - link "View Details" [ref=e159] [cursor=pointer]:
+              - /url: /shelter/9b03232a-0ddd-4f14-b99b-6c3a4f8787a1
+        - generic [ref=e161]:
+          - generic [ref=e162]:
+            - heading "Black Forest Shelter" [level=4] [ref=e163]:
+              - link "Black Forest Shelter" [ref=e164] [cursor=pointer]:
+                - /url: /shelter/9ffcb3b8-14dc-4dce-ae0d-1062f597063a
+            - generic [ref=e165]:
+              - generic [ref=e166]: Free
+              - generic [ref=e167]: shelter
+          - generic [ref=e168]:
+            - generic [ref=e169]:
+              - img [ref=e170]
+              - generic [ref=e175]: "22"
+            - generic [ref=e176]:
+              - img [ref=e177]
+              - generic [ref=e179]: 1200m
+            - generic [ref=e180]:
+              - img [ref=e181]
+              - generic [ref=e184]: 48.000, 8.000
+          - generic [ref=e185]:
+            - generic [ref=e186]:
+              - img [ref=e187]
+              - generic [ref=e189]: No reviews yet
+            - link "View Details" [ref=e190] [cursor=pointer]:
+              - /url: /shelter/9ffcb3b8-14dc-4dce-ae0d-1062f597063a
+        - generic [ref=e192]:
+          - generic [ref=e193]:
+            - heading "Blaueishütte" [level=4] [ref=e194]:
+              - link "Blaueishütte" [ref=e195] [cursor=pointer]:
+                - /url: /shelter/2a28d62f-eb0c-47b3-97ca-177faae5b204
+            - generic [ref=e196]:
+              - generic [ref=e197]: Paid
+              - generic [ref=e198]: hut
+          - generic [ref=e199]:
+            - generic [ref=e200]:
+              - img [ref=e201]
+              - generic [ref=e206]: "60"
+            - generic [ref=e207]:
+              - img [ref=e208]
+              - generic [ref=e210]: 1651m
+            - generic [ref=e211]:
+              - img [ref=e212]
+              - generic [ref=e215]: 47.550, 12.850
+          - generic [ref=e216]:
+            - generic [ref=e217]:
+              - img [ref=e218]
+              - generic [ref=e220]: No reviews yet
+            - link "View Details" [ref=e221] [cursor=pointer]:
+              - /url: /shelter/2a28d62f-eb0c-47b3-97ca-177faae5b204
+        - generic [ref=e223]:
+          - generic [ref=e224]:
+            - heading "Bucegi Valley Shelter" [level=4] [ref=e225]:
+              - link "Bucegi Valley Shelter" [ref=e226] [cursor=pointer]:
+                - /url: /shelter/5c48bcc6-d13c-45ca-aaa8-1831d4bf13e6
+            - generic [ref=e227]:
+              - generic [ref=e228]: Free
+              - generic [ref=e229]: shelter
+          - generic [ref=e230]:
+            - generic [ref=e231]:
+              - img [ref=e232]
+              - generic [ref=e237]: "20"
+            - generic [ref=e238]:
+              - img [ref=e239]
+              - generic [ref=e241]: 1800m
+            - generic [ref=e242]:
+              - img [ref=e243]
+              - generic [ref=e246]: 45.400, 25.500
+          - generic [ref=e247]:
+            - generic [ref=e248]:
+              - img [ref=e249]
+              - generic [ref=e251]: No reviews yet
+            - link "View Details" [ref=e252] [cursor=pointer]:
+              - /url: /shelter/5c48bcc6-d13c-45ca-aaa8-1831d4bf13e6
+        - generic [ref=e254]:
+          - generic [ref=e255]:
+            - heading "Cabana Malaiesti" [level=4] [ref=e256]:
+              - link "Cabana Malaiesti" [ref=e257] [cursor=pointer]:
+                - /url: /shelter/1ca96e25-0215-4745-8944-761afbba8fdf
+            - generic [ref=e258]:
+              - generic [ref=e259]: Paid
+              - generic [ref=e260]: hut
+          - generic [ref=e261]:
+            - generic [ref=e262]:
+              - img [ref=e263]
+              - generic [ref=e268]: "60"
+            - generic [ref=e269]:
+              - img [ref=e270]
+              - generic [ref=e272]: 1724m
+            - generic [ref=e273]:
+              - img [ref=e274]
+              - generic [ref=e277]: 45.383, 25.483
+          - generic [ref=e278]:
+            - generic [ref=e279]:
+              - img [ref=e280]
+              - generic [ref=e282]: No reviews yet
+            - link "View Details" [ref=e283] [cursor=pointer]:
+              - /url: /shelter/1ca96e25-0215-4745-8944-761afbba8fdf
+        - generic [ref=e285]:
+          - generic [ref=e286]:
+            - heading "Cabana Omu" [level=4] [ref=e287]:
+              - link "Cabana Omu" [ref=e288] [cursor=pointer]:
+                - /url: /shelter/468ced1a-05a8-47d7-8476-3edf8e571939
+            - generic [ref=e289]:
+              - generic [ref=e290]: Paid
+              - generic [ref=e291]: hut
+          - generic [ref=e292]:
+            - generic [ref=e293]:
+              - img [ref=e294]
+              - generic [ref=e299]: "85"
+            - generic [ref=e300]:
+              - img [ref=e301]
+              - generic [ref=e303]: 2507m
+            - generic [ref=e304]:
+              - img [ref=e305]
+              - generic [ref=e308]: 45.417, 25.467
+          - generic [ref=e309]:
+            - generic [ref=e310]:
+              - img [ref=e311]
+              - generic [ref=e313]: No reviews yet
+            - link "View Details" [ref=e314] [cursor=pointer]:
+              - /url: /shelter/468ced1a-05a8-47d7-8476-3edf8e571939
+        - generic [ref=e316]:
+          - generic [ref=e317]:
+            - heading "Cabana Piatra Arsa" [level=4] [ref=e318]:
+              - link "Cabana Piatra Arsa" [ref=e319] [cursor=pointer]:
+                - /url: /shelter/99e69ff3-415c-4eea-84ff-49c02576de59
+            - generic [ref=e320]:
+              - generic [ref=e321]: Paid
+              - generic [ref=e322]: hut
+          - generic [ref=e323]:
+            - generic [ref=e324]:
+              - img [ref=e325]
+              - generic [ref=e330]: "40"
+            - generic [ref=e331]:
+              - img [ref=e332]
+              - generic [ref=e334]: 1950m
+            - generic [ref=e335]:
+              - img [ref=e336]
+              - generic [ref=e339]: 45.400, 25.400
+          - generic [ref=e340]:
+            - generic [ref=e341]:
+              - img [ref=e342]
+              - generic [ref=e344]: No reviews yet
+            - link "View Details" [ref=e345] [cursor=pointer]:
+              - /url: /shelter/99e69ff3-415c-4eea-84ff-49c02576de59
+        - generic [ref=e347]:
+          - generic [ref=e348]:
+            - heading "Cabane de Moiry" [level=4] [ref=e349]:
+              - link "Cabane de Moiry" [ref=e350] [cursor=pointer]:
+                - /url: /shelter/e2df94fc-e452-43c5-8fd1-78f020a8fb84
+            - generic [ref=e351]:
+              - generic [ref=e352]: Paid
+              - generic [ref=e353]: hut
+          - generic [ref=e354]:
+            - generic [ref=e355]:
+              - img [ref=e356]
+              - generic [ref=e361]: "110"
+            - generic [ref=e362]:
+              - img [ref=e363]
+              - generic [ref=e365]: 2825m
+            - generic [ref=e366]:
+              - img [ref=e367]
+              - generic [ref=e370]: 46.117, 7.617
+          - generic [ref=e371]:
+            - generic [ref=e372]:
+              - img [ref=e373]
+              - generic [ref=e375]: No reviews yet
+            - link "View Details" [ref=e376] [cursor=pointer]:
+              - /url: /shelter/e2df94fc-e452-43c5-8fd1-78f020a8fb84
+        - generic [ref=e378]:
+          - generic [ref=e379]:
+            - heading "Cabane du Mont Fort" [level=4] [ref=e380]:
+              - link "Cabane du Mont Fort" [ref=e381] [cursor=pointer]:
+                - /url: /shelter/df11d84c-f134-4dd0-ad3d-1d50886be0e2
+            - generic [ref=e382]:
+              - generic [ref=e383]: Paid
+              - generic [ref=e384]: hut
+          - generic [ref=e385]:
+            - generic [ref=e386]:
+              - img [ref=e387]
+              - generic [ref=e392]: "70"
+            - generic [ref=e393]:
+              - img [ref=e394]
+              - generic [ref=e396]: 2457m
+            - generic [ref=e397]:
+              - img [ref=e398]
+              - generic [ref=e401]: 46.083, 7.300
+          - generic [ref=e402]:
+            - generic [ref=e403]:
+              - img [ref=e404]
+              - generic [ref=e406]: No reviews yet
+            - link "View Details" [ref=e407] [cursor=pointer]:
+              - /url: /shelter/df11d84c-f134-4dd0-ad3d-1d50886be0e2
+        - generic [ref=e409]:
+          - generic [ref=e410]:
+            - heading "Chamonix Valley Shelter" [level=4] [ref=e411]:
+              - link "Chamonix Valley Shelter" [ref=e412] [cursor=pointer]:
+                - /url: /shelter/d19af749-d229-4862-8950-c011dc68db21
+            - generic [ref=e413]:
+              - generic [ref=e414]: Free
+              - generic [ref=e415]: shelter
+          - generic [ref=e416]:
+            - generic [ref=e417]:
+              - img [ref=e418]
+              - generic [ref=e423]: "14"
+            - generic [ref=e424]:
+              - img [ref=e425]
+              - generic [ref=e427]: 1600m
+            - generic [ref=e428]:
+              - img [ref=e429]
+              - generic [ref=e432]: 45.900, 6.850
+          - generic [ref=e433]:
+            - generic [ref=e434]:
+              - img [ref=e435]
+              - generic [ref=e437]: No reviews yet
+            - link "View Details" [ref=e438] [cursor=pointer]:
+              - /url: /shelter/d19af749-d229-4862-8950-c011dc68db21
+        - generic [ref=e440]:
+          - generic [ref=e441]:
+            - heading "Dachstein Hut" [level=4] [ref=e442]:
+              - link "Dachstein Hut" [ref=e443] [cursor=pointer]:
+                - /url: /shelter/92bc916d-293b-4c26-b62e-3f15e080ddd9
+            - generic [ref=e444]:
+              - generic [ref=e445]: Paid
+              - generic [ref=e446]: hut
+          - generic [ref=e447]:
+            - generic [ref=e448]:
+              - img [ref=e449]
+              - generic [ref=e454]: "95"
+            - generic [ref=e455]:
+              - img [ref=e456]
+              - generic [ref=e458]: 2741m
+            - generic [ref=e459]:
+              - img [ref=e460]
+              - generic [ref=e463]: 47.550, 13.617
+          - generic [ref=e464]:
+            - generic [ref=e465]:
+              - img [ref=e466]
+              - generic [ref=e468]: No reviews yet
+            - link "View Details" [ref=e469] [cursor=pointer]:
+              - /url: /shelter/92bc916d-293b-4c26-b62e-3f15e080ddd9
+        - generic [ref=e471]:
+          - generic [ref=e472]:
+            - heading "Doldenhornhütte" [level=4] [ref=e473]:
+              - link "Doldenhornhütte" [ref=e474] [cursor=pointer]:
+                - /url: /shelter/ee76d903-f7bc-46fd-b832-96fad2e1901b
+            - generic [ref=e475]:
+              - generic [ref=e476]: Paid
+              - generic [ref=e477]: hut
+          - generic [ref=e478]:
+            - generic [ref=e479]:
+              - img [ref=e480]
+              - generic [ref=e485]: "65"
+            - generic [ref=e486]:
+              - img [ref=e487]
+              - generic [ref=e489]: 1915m
+            - generic [ref=e490]:
+              - img [ref=e491]
+              - generic [ref=e494]: 46.483, 7.683
+          - generic [ref=e495]:
+            - generic [ref=e496]:
+              - img [ref=e497]
+              - generic [ref=e499]: No reviews yet
+            - link "View Details" [ref=e500] [cursor=pointer]:
+              - /url: /shelter/ee76d903-f7bc-46fd-b832-96fad2e1901b
+        - generic [ref=e502]:
+          - generic [ref=e503]:
+            - heading "Dolomites Emergency Hut" [level=4] [ref=e504]:
+              - link "Dolomites Emergency Hut" [ref=e505] [cursor=pointer]:
+                - /url: /shelter/df5590cd-4128-41bb-a969-297eac7b72c4
+            - generic [ref=e506]:
+              - generic [ref=e507]: Free
+              - generic [ref=e508]: shelter
+          - generic [ref=e509]:
+            - generic [ref=e510]:
+              - img [ref=e511]
+              - generic [ref=e516]: "16"
+            - generic [ref=e517]:
+              - img [ref=e518]
+              - generic [ref=e520]: 2300m
+            - generic [ref=e521]:
+              - img [ref=e522]
+              - generic [ref=e525]: 46.500, 12.000
+          - generic [ref=e526]:
+            - generic [ref=e527]:
+              - img [ref=e528]
+              - generic [ref=e530]: No reviews yet
+            - link "View Details" [ref=e531] [cursor=pointer]:
+              - /url: /shelter/df5590cd-4128-41bb-a969-297eac7b72c4
+        - generic [ref=e533]:
+          - generic [ref=e534]:
+            - heading "Dom Planika" [level=4] [ref=e535]:
+              - link "Dom Planika" [ref=e536] [cursor=pointer]:
+                - /url: /shelter/416feec2-b739-47ec-a70e-0493f15fce0a
+            - generic [ref=e537]:
+              - generic [ref=e538]: Paid
+              - generic [ref=e539]: hut
+          - generic [ref=e540]:
+            - generic [ref=e541]:
+              - img [ref=e542]
+              - generic [ref=e547]: "45"
+            - generic [ref=e548]:
+              - img [ref=e549]
+              - generic [ref=e551]: 2401m
+            - generic [ref=e552]:
+              - img [ref=e553]
+              - generic [ref=e556]: 46.367, 13.817
+          - generic [ref=e557]:
+            - generic [ref=e558]:
+              - img [ref=e559]
+              - generic [ref=e561]: No reviews yet
+            - link "View Details" [ref=e562] [cursor=pointer]:
+              - /url: /shelter/416feec2-b739-47ec-a70e-0493f15fce0a
+        - generic [ref=e564]:
+          - generic [ref=e565]:
+            - heading "Engadin Emergency Hut" [level=4] [ref=e566]:
+              - link "Engadin Emergency Hut" [ref=e567] [cursor=pointer]:
+                - /url: /shelter/5aff4ac4-2313-47cd-97dd-de97428d1420
+            - generic [ref=e568]:
+              - generic [ref=e569]: Free
+              - generic [ref=e570]: shelter
+          - generic [ref=e571]:
+            - generic [ref=e572]:
+              - img [ref=e573]
+              - generic [ref=e578]: "12"
+            - generic [ref=e579]:
+              - img [ref=e580]
+              - generic [ref=e582]: 2200m
+            - generic [ref=e583]:
+              - img [ref=e584]
+              - generic [ref=e587]: 46.517, 9.817
+          - generic [ref=e588]:
+            - generic [ref=e589]:
+              - img [ref=e590]
+              - generic [ref=e592]: No reviews yet
+            - link "View Details" [ref=e593] [cursor=pointer]:
+              - /url: /shelter/5aff4ac4-2313-47cd-97dd-de97428d1420
+        - generic [ref=e595]:
+          - generic [ref=e596]:
+            - heading "Fagaras Emergency Shelter" [level=4] [ref=e597]:
+              - link "Fagaras Emergency Shelter" [ref=e598] [cursor=pointer]:
+                - /url: /shelter/3bd46cd4-4919-4bfd-a2c9-1080e906e4d0
+            - generic [ref=e599]:
+              - generic [ref=e600]: Free
+              - generic [ref=e601]: shelter
+          - generic [ref=e602]:
+            - generic [ref=e603]:
+              - img [ref=e604]
+              - generic [ref=e609]: "12"
+            - generic [ref=e610]:
+              - img [ref=e611]
+              - generic [ref=e613]: 2100m
+            - generic [ref=e614]:
+              - img [ref=e615]
+              - generic [ref=e618]: 45.600, 24.700
+          - generic [ref=e619]:
+            - generic [ref=e620]:
+              - img [ref=e621]
+              - generic [ref=e623]: No reviews yet
+            - link "View Details" [ref=e624] [cursor=pointer]:
+              - /url: /shelter/3bd46cd4-4919-4bfd-a2c9-1080e906e4d0
+        - generic [ref=e626]:
+          - generic [ref=e627]:
+            - heading "Franz Senn Hut" [level=4] [ref=e628]:
+              - link "Franz Senn Hut" [ref=e629] [cursor=pointer]:
+                - /url: /shelter/d0d98936-0b22-499f-9911-29447e60adba
+            - generic [ref=e630]:
+              - generic [ref=e631]: Paid
+              - generic [ref=e632]: hut
+          - generic [ref=e633]:
+            - generic [ref=e634]:
+              - img [ref=e635]
+              - generic [ref=e640]: "170"
+            - generic [ref=e641]:
+              - img [ref=e642]
+              - generic [ref=e644]: 2147m
+            - generic [ref=e645]:
+              - img [ref=e646]
+              - generic [ref=e649]: 47.083, 11.150
+          - generic [ref=e650]:
+            - generic [ref=e651]:
+              - img [ref=e652]
+              - generic [ref=e654]: No reviews yet
+            - link "View Details" [ref=e655] [cursor=pointer]:
+              - /url: /shelter/d0d98936-0b22-499f-9911-29447e60adba
+        - generic [ref=e657]:
+          - generic [ref=e658]:
+            - heading "Glorer Hut" [level=4] [ref=e659]:
+              - link "Glorer Hut" [ref=e660] [cursor=pointer]:
+                - /url: /shelter/b0f57305-2729-41c9-9891-ef7f9f8312a1
+            - generic [ref=e661]:
+              - generic [ref=e662]: Paid
+              - generic [ref=e663]: hut
+          - generic [ref=e664]:
+            - generic [ref=e665]:
+              - img [ref=e666]
+              - generic [ref=e671]: "40"
+            - generic [ref=e672]:
+              - img [ref=e673]
+              - generic [ref=e675]: 2651m
+            - generic [ref=e676]:
+              - img [ref=e677]
+              - generic [ref=e680]: 47.100, 12.400
+          - generic [ref=e681]:
+            - generic [ref=e682]:
+              - img [ref=e683]
+              - generic [ref=e685]: No reviews yet
+            - link "View Details" [ref=e686] [cursor=pointer]:
+              - /url: /shelter/b0f57305-2729-41c9-9891-ef7f9f8312a1
+        - generic [ref=e688]:
+          - generic [ref=e689]:
+            - heading "Grialetsch Hut" [level=4] [ref=e690]:
+              - link "Grialetsch Hut" [ref=e691] [cursor=pointer]:
+                - /url: /shelter/8f949476-725b-4427-a23e-22e07e4db226
+            - generic [ref=e692]:
+              - generic [ref=e693]: Paid
+              - generic [ref=e694]: hut
+          - generic [ref=e695]:
+            - generic [ref=e696]:
+              - img [ref=e697]
+              - generic [ref=e702]: "40"
+            - generic [ref=e703]:
+              - img [ref=e704]
+              - generic [ref=e706]: 2542m
+            - generic [ref=e707]:
+              - img [ref=e708]
+              - generic [ref=e711]: 46.833, 10.083
+          - generic [ref=e712]:
+            - generic [ref=e713]:
+              - img [ref=e714]
+              - generic [ref=e716]: No reviews yet
+            - link "View Details" [ref=e717] [cursor=pointer]:
+              - /url: /shelter/8f949476-725b-4427-a23e-22e07e4db226
+        - generic [ref=e719]:
+          - generic [ref=e720]:
+            - heading "Hochschober Hut" [level=4] [ref=e721]:
+              - link "Hochschober Hut" [ref=e722] [cursor=pointer]:
+                - /url: /shelter/e5f2d59d-cccc-43c7-8f73-357c5265719e
+            - generic [ref=e723]:
+              - generic [ref=e724]: Paid
+              - generic [ref=e725]: hut
+          - generic [ref=e726]:
+            - generic [ref=e727]:
+              - img [ref=e728]
+              - generic [ref=e733]: "60"
+            - generic [ref=e734]:
+              - img [ref=e735]
+              - generic [ref=e737]: 2322m
+            - generic [ref=e738]:
+              - img [ref=e739]
+              - generic [ref=e742]: 47.067, 12.333
+          - generic [ref=e743]:
+            - generic [ref=e744]:
+              - img [ref=e745]
+              - generic [ref=e747]: No reviews yet
+            - link "View Details" [ref=e748] [cursor=pointer]:
+              - /url: /shelter/e5f2d59d-cccc-43c7-8f73-357c5265719e
+        - generic [ref=e750]:
+          - generic [ref=e751]:
+            - heading "Julian Alps Shelter" [level=4] [ref=e752]:
+              - link "Julian Alps Shelter" [ref=e753] [cursor=pointer]:
+                - /url: /shelter/b9428127-87b3-4274-8006-5816bd7684a4
+            - generic [ref=e754]:
+              - generic [ref=e755]: Free
+              - generic [ref=e756]: shelter
+          - generic [ref=e757]:
+            - generic [ref=e758]:
+              - img [ref=e759]
+              - generic [ref=e764]: "18"
+            - generic [ref=e765]:
+              - img [ref=e766]
+              - generic [ref=e768]: 1950m
+            - generic [ref=e769]:
+              - img [ref=e770]
+              - generic [ref=e773]: 46.400, 13.700
+          - generic [ref=e774]:
+            - generic [ref=e775]:
+              - img [ref=e776]
+              - generic [ref=e778]: No reviews yet
+            - link "View Details" [ref=e779] [cursor=pointer]:
+              - /url: /shelter/b9428127-87b3-4274-8006-5816bd7684a4
+        - generic [ref=e781]:
+          - generic [ref=e782]:
+            - heading "Kärlingerhaus" [level=4] [ref=e783]:
+              - link "Kärlingerhaus" [ref=e784] [cursor=pointer]:
+                - /url: /shelter/bc6e51a2-d95e-43be-b970-22996cb53b1f
+            - generic [ref=e785]:
+              - generic [ref=e786]: Paid
+              - generic [ref=e787]: hut
+          - generic [ref=e788]:
+            - generic [ref=e789]:
+              - img [ref=e790]
+              - generic [ref=e795]: "80"
+            - generic [ref=e796]:
+              - img [ref=e797]
+              - generic [ref=e799]: 1631m
+            - generic [ref=e800]:
+              - img [ref=e801]
+              - generic [ref=e804]: 47.583, 12.883
+          - generic [ref=e805]:
+            - generic [ref=e806]:
+              - img [ref=e807]
+              - generic [ref=e809]: No reviews yet
+            - link "View Details" [ref=e810] [cursor=pointer]:
+              - /url: /shelter/bc6e51a2-d95e-43be-b970-22996cb53b1f
+        - generic [ref=e812]:
+          - generic [ref=e813]:
+            - heading "Kitzsteinhorn Hut" [level=4] [ref=e814]:
+              - link "Kitzsteinhorn Hut" [ref=e815] [cursor=pointer]:
+                - /url: /shelter/d5a32927-202c-46ac-b309-985db1409f70
+            - generic [ref=e816]:
+              - generic [ref=e817]: Paid
+              - generic [ref=e818]: hut
+          - generic [ref=e819]:
+            - generic [ref=e820]:
+              - img [ref=e821]
+              - generic [ref=e826]: "45"
+            - generic [ref=e827]:
+              - img [ref=e828]
+              - generic [ref=e830]: 2261m
+            - generic [ref=e831]:
+              - img [ref=e832]
+              - generic [ref=e835]: 47.183, 12.733
+          - generic [ref=e836]:
+            - generic [ref=e837]:
+              - img [ref=e838]
+              - generic [ref=e840]: No reviews yet
+            - link "View Details" [ref=e841] [cursor=pointer]:
+              - /url: /shelter/d5a32927-202c-46ac-b309-985db1409f70
+        - generic [ref=e843]:
+          - generic [ref=e844]:
+            - heading "Knorrhütte" [level=4] [ref=e845]:
+              - link "Knorrhütte" [ref=e846] [cursor=pointer]:
+                - /url: /shelter/ee38df89-de67-4c43-a991-6373814b4985
+            - generic [ref=e847]:
+              - generic [ref=e848]: Paid
+              - generic [ref=e849]: hut
+          - generic [ref=e850]:
+            - generic [ref=e851]:
+              - img [ref=e852]
+              - generic [ref=e857]: "65"
+            - generic [ref=e858]:
+              - img [ref=e859]
+              - generic [ref=e861]: 2051m
+            - generic [ref=e862]:
+              - img [ref=e863]
+              - generic [ref=e866]: 47.400, 11.067
+          - generic [ref=e867]:
+            - generic [ref=e868]:
+              - img [ref=e869]
+              - generic [ref=e871]: No reviews yet
+            - link "View Details" [ref=e872] [cursor=pointer]:
+              - /url: /shelter/ee38df89-de67-4c43-a991-6373814b4985
+        - generic [ref=e874]:
+          - generic [ref=e875]:
+            - heading "Kredarica Hut" [level=4] [ref=e876]:
+              - link "Kredarica Hut" [ref=e877] [cursor=pointer]:
+                - /url: /shelter/7236888e-bf33-4fdc-8e4c-a3c9909f7c12
+            - generic [ref=e878]:
+              - generic [ref=e879]: Paid
+              - generic [ref=e880]: hut
+          - generic [ref=e881]:
+            - generic [ref=e882]:
+              - img [ref=e883]
+              - generic [ref=e888]: "180"
+            - generic [ref=e889]:
+              - img [ref=e890]
+              - generic [ref=e892]: 2515m
+            - generic [ref=e893]:
+              - img [ref=e894]
+              - generic [ref=e897]: 46.378, 13.842
+          - generic [ref=e898]:
+            - generic [ref=e899]:
+              - img [ref=e900]
+              - generic [ref=e902]: No reviews yet
+            - link "View Details" [ref=e903] [cursor=pointer]:
+              - /url: /shelter/7236888e-bf33-4fdc-8e4c-a3c9909f7c12
+        - generic [ref=e905]:
+          - generic [ref=e906]:
+            - heading "Matterhorn Hut" [level=4] [ref=e907]:
+              - link "Matterhorn Hut" [ref=e908] [cursor=pointer]:
+                - /url: /shelter/9d948373-23a5-4da2-936b-e8085626a38a
+            - generic [ref=e909]:
+              - generic [ref=e910]: Paid
+              - generic [ref=e911]: hut
+          - paragraph [ref=e912]: Iconic shelter beneath the legendary Matterhorn peak. Essential stop for climbers attempting the Hörnli Ridge.
+          - generic [ref=e913]:
+            - generic [ref=e914]:
+              - img [ref=e915]
+              - generic [ref=e920]: "80"
+            - generic [ref=e921]:
+              - img [ref=e922]
+              - generic [ref=e924]: 3260m
+            - generic [ref=e925]:
+              - img [ref=e926]
+              - generic [ref=e929]: 45.976, 7.658
+          - generic [ref=e930]:
+            - generic [ref=e931]:
+              - img [ref=e932]
+              - generic [ref=e934]: No reviews yet
+            - link "View Details" [ref=e935] [cursor=pointer]:
+              - /url: /shelter/9d948373-23a5-4da2-936b-e8085626a38a
+        - generic [ref=e937]:
+          - generic [ref=e938]:
+            - heading "Mont Blanc Emergency Hut" [level=4] [ref=e939]:
+              - link "Mont Blanc Emergency Hut" [ref=e940] [cursor=pointer]:
+                - /url: /shelter/8e89bba1-1c80-47e9-8461-16b027123579
+            - generic [ref=e941]:
+              - generic [ref=e942]: Free
+              - generic [ref=e943]: shelter
+          - generic [ref=e944]:
+            - generic [ref=e945]:
+              - img [ref=e946]
+              - generic [ref=e951]: "8"
+            - generic [ref=e952]:
+              - img [ref=e953]
+              - generic [ref=e955]: 2800m
+            - generic [ref=e956]:
+              - img [ref=e957]
+              - generic [ref=e960]: 45.830, 6.800
+          - generic [ref=e961]:
+            - generic [ref=e962]:
+              - img [ref=e963]
+              - generic [ref=e965]: No reviews yet
+            - link "View Details" [ref=e966] [cursor=pointer]:
+              - /url: /shelter/8e89bba1-1c80-47e9-8461-16b027123579
+        - generic [ref=e968]:
+          - generic [ref=e969]:
+            - heading "Monte Rosa Hut" [level=4] [ref=e970]:
+              - link "Monte Rosa Hut" [ref=e971] [cursor=pointer]:
+                - /url: /shelter/71704520-5a1f-4d87-8ff0-c749cd1e1298
+            - generic [ref=e972]:
+              - generic [ref=e973]: Paid
+              - generic [ref=e974]: hut
+          - paragraph [ref=e975]: Historic mountain hut with stunning views of Monte Rosa massif. Popular base for climbing expeditions.
+          - generic [ref=e976]:
+            - generic [ref=e977]:
+              - img [ref=e978]
+              - generic [ref=e983]: "130"
+            - generic [ref=e984]:
+              - img [ref=e985]
+              - generic [ref=e987]: 2883m
+            - generic [ref=e988]:
+              - img [ref=e989]
+              - generic [ref=e992]: 45.920, 7.867
+          - generic [ref=e993]:
+            - generic [ref=e994]:
+              - img [ref=e995]
+              - generic [ref=e997]: No reviews yet
+            - link "View Details" [ref=e998] [cursor=pointer]:
+              - /url: /shelter/71704520-5a1f-4d87-8ff0-c749cd1e1298
+        - generic [ref=e1000]:
+          - generic [ref=e1001]:
+            - heading "Münchner Haus" [level=4] [ref=e1002]:
+              - link "Münchner Haus" [ref=e1003] [cursor=pointer]:
+                - /url: /shelter/e3431a48-c1a7-4e82-948d-a2328d81f351
+            - generic [ref=e1004]:
+              - generic [ref=e1005]: Paid
+              - generic [ref=e1006]: hut
+          - generic [ref=e1007]:
+            - generic [ref=e1008]:
+              - img [ref=e1009]
+              - generic [ref=e1014]: "108"
+            - generic [ref=e1015]:
+              - img [ref=e1016]
+              - generic [ref=e1018]: 2959m
+            - generic [ref=e1019]:
+              - img [ref=e1020]
+              - generic [ref=e1023]: 47.417, 10.983
+          - generic [ref=e1024]:
+            - generic [ref=e1025]:
+              - img [ref=e1026]
+              - generic [ref=e1028]: No reviews yet
+            - link "View Details" [ref=e1029] [cursor=pointer]:
+              - /url: /shelter/e3431a48-c1a7-4e82-948d-a2328d81f351
+        - generic [ref=e1031]:
+          - generic [ref=e1032]:
+            - heading "Ötztal Emergency Hut" [level=4] [ref=e1033]:
+              - link "Ötztal Emergency Hut" [ref=e1034] [cursor=pointer]:
+                - /url: /shelter/2eec8eec-5607-40ed-8cda-ae5cf6c06a03
+            - generic [ref=e1035]:
+              - generic [ref=e1036]: Free
+              - generic [ref=e1037]: shelter
+          - generic [ref=e1038]:
+            - generic [ref=e1039]:
+              - img [ref=e1040]
+              - generic [ref=e1045]: "8"
+            - generic [ref=e1046]:
+              - img [ref=e1047]
+              - generic [ref=e1049]: 2800m
+            - generic [ref=e1050]:
+              - img [ref=e1051]
+              - generic [ref=e1054]: 46.900, 10.900
+          - generic [ref=e1055]:
+            - generic [ref=e1056]:
+              - img [ref=e1057]
+              - generic [ref=e1059]: No reviews yet
+            - link "View Details" [ref=e1060] [cursor=pointer]:
+              - /url: /shelter/2eec8eec-5607-40ed-8cda-ae5cf6c06a03
+        - generic [ref=e1062]:
+          - generic [ref=e1063]:
+            - heading "Piedmont Valley Shelter" [level=4] [ref=e1064]:
+              - link "Piedmont Valley Shelter" [ref=e1065] [cursor=pointer]:
+                - /url: /shelter/5bbd99ba-ce62-422b-9088-be4204fef0b8
+            - generic [ref=e1066]:
+              - generic [ref=e1067]: Free
+              - generic [ref=e1068]: shelter
+          - generic [ref=e1069]:
+            - generic [ref=e1070]:
+              - img [ref=e1071]
+              - generic [ref=e1076]: "10"
+            - generic [ref=e1077]:
+              - img [ref=e1078]
+              - generic [ref=e1080]: 1800m
+            - generic [ref=e1081]:
+              - img [ref=e1082]
+              - generic [ref=e1085]: 45.500, 7.200
+          - generic [ref=e1086]:
+            - generic [ref=e1087]:
+              - img [ref=e1088]
+              - generic [ref=e1090]: No reviews yet
+            - link "View Details" [ref=e1091] [cursor=pointer]:
+              - /url: /shelter/5bbd99ba-ce62-422b-9088-be4204fef0b8
+        - generic [ref=e1093]:
+          - generic [ref=e1094]:
+            - heading "Pyrenees Valley Shelter" [level=4] [ref=e1095]:
+              - link "Pyrenees Valley Shelter" [ref=e1096] [cursor=pointer]:
+                - /url: /shelter/7276fe89-44f7-4351-8419-0e105eab1641
+            - generic [ref=e1097]:
+              - generic [ref=e1098]: Free
+              - generic [ref=e1099]: shelter
+          - generic [ref=e1100]:
+            - generic [ref=e1101]:
+              - img [ref=e1102]
+              - generic [ref=e1107]: "15"
+            - generic [ref=e1108]:
+              - img [ref=e1109]
+              - generic [ref=e1111]: 1650m
+            - generic [ref=e1112]:
+              - img [ref=e1113]
+              - generic [ref=e1116]: 42.800, 0.500
+          - generic [ref=e1117]:
+            - generic [ref=e1118]:
+              - img [ref=e1119]
+              - generic [ref=e1121]: No reviews yet
+            - link "View Details" [ref=e1122] [cursor=pointer]:
+              - /url: /shelter/7276fe89-44f7-4351-8419-0e105eab1641
+        - generic [ref=e1124]:
+          - generic [ref=e1125]:
+            - heading "Refuge Albert Premier" [level=4] [ref=e1126]:
+              - link "Refuge Albert Premier" [ref=e1127] [cursor=pointer]:
+                - /url: /shelter/fdc267e0-63bf-48d6-a703-14e0c8f569b7
+            - generic [ref=e1128]:
+              - generic [ref=e1129]: Paid
+              - generic [ref=e1130]: hut
+          - generic [ref=e1131]:
+            - generic [ref=e1132]:
+              - img [ref=e1133]
+              - generic [ref=e1138]: "110"
+            - generic [ref=e1139]:
+              - img [ref=e1140]
+              - generic [ref=e1142]: 2702m
+            - generic [ref=e1143]:
+              - img [ref=e1144]
+              - generic [ref=e1147]: 46.000, 7.033
+          - generic [ref=e1148]:
+            - generic [ref=e1149]:
+              - img [ref=e1150]
+              - generic [ref=e1152]: No reviews yet
+            - link "View Details" [ref=e1153] [cursor=pointer]:
+              - /url: /shelter/fdc267e0-63bf-48d6-a703-14e0c8f569b7
+        - generic [ref=e1155]:
+          - generic [ref=e1156]:
+            - heading "Refuge d'Espingo" [level=4] [ref=e1157]:
+              - link "Refuge d'Espingo" [ref=e1158] [cursor=pointer]:
+                - /url: /shelter/5d4c1388-4177-4eb3-bdff-ea1d06063781
+            - generic [ref=e1159]:
+              - generic [ref=e1160]: Paid
+              - generic [ref=e1161]: hut
+          - generic [ref=e1162]:
+            - generic [ref=e1163]:
+              - img [ref=e1164]
+              - generic [ref=e1169]: "45"
+            - generic [ref=e1170]:
+              - img [ref=e1171]
+              - generic [ref=e1173]: 1967m
+            - generic [ref=e1174]:
+              - img [ref=e1175]
+              - generic [ref=e1178]: 42.783, 0.533
+          - generic [ref=e1179]:
+            - generic [ref=e1180]:
+              - img [ref=e1181]
+              - generic [ref=e1183]: No reviews yet
+            - link "View Details" [ref=e1184] [cursor=pointer]:
+              - /url: /shelter/5d4c1388-4177-4eb3-bdff-ea1d06063781
+        - generic [ref=e1186]:
+          - generic [ref=e1187]:
+            - heading "Refuge de l'Aigle" [level=4] [ref=e1188]:
+              - link "Refuge de l'Aigle" [ref=e1189] [cursor=pointer]:
+                - /url: /shelter/46af94f3-70d4-48c2-a36f-24dbf3c01014
+            - generic [ref=e1190]:
+              - generic [ref=e1191]: Paid
+              - generic [ref=e1192]: hut
+          - generic [ref=e1193]:
+            - generic [ref=e1194]:
+              - img [ref=e1195]
+              - generic [ref=e1200]: "35"
+            - generic [ref=e1201]:
+              - img [ref=e1202]
+              - generic [ref=e1204]: 3450m
+            - generic [ref=e1205]:
+              - img [ref=e1206]
+              - generic [ref=e1209]: 45.950, 6.900
+          - generic [ref=e1210]:
+            - generic [ref=e1211]:
+              - img [ref=e1212]
+              - generic [ref=e1214]: No reviews yet
+            - link "View Details" [ref=e1215] [cursor=pointer]:
+              - /url: /shelter/46af94f3-70d4-48c2-a36f-24dbf3c01014
+        - generic [ref=e1217]:
+          - generic [ref=e1218]:
+            - heading "Refuge de Tête Rousse" [level=4] [ref=e1219]:
+              - link "Refuge de Tête Rousse" [ref=e1220] [cursor=pointer]:
+                - /url: /shelter/ee592421-83f5-4795-b45e-23d3aa29ed0e
+            - generic [ref=e1221]:
+              - generic [ref=e1222]: Paid
+              - generic [ref=e1223]: hut
+          - generic [ref=e1224]:
+            - generic [ref=e1225]:
+              - img [ref=e1226]
+              - generic [ref=e1231]: "70"
+            - generic [ref=e1232]:
+              - img [ref=e1233]
+              - generic [ref=e1235]: 3167m
+            - generic [ref=e1236]:
+              - img [ref=e1237]
+              - generic [ref=e1240]: 45.833, 6.800
+          - generic [ref=e1241]:
+            - generic [ref=e1242]:
+              - img [ref=e1243]
+              - generic [ref=e1245]: No reviews yet
+            - link "View Details" [ref=e1246] [cursor=pointer]:
+              - /url: /shelter/ee592421-83f5-4795-b45e-23d3aa29ed0e
+        - generic [ref=e1248]:
+          - generic [ref=e1249]:
+            - heading "Refuge des Cosmiques" [level=4] [ref=e1250]:
+              - link "Refuge des Cosmiques" [ref=e1251] [cursor=pointer]:
+                - /url: /shelter/f279f2f8-9093-49c4-87cd-cd658ca8e816
+            - generic [ref=e1252]:
+              - generic [ref=e1253]: Paid
+              - generic [ref=e1254]: hut
+          - generic [ref=e1255]:
+            - generic [ref=e1256]:
+              - img [ref=e1257]
+              - generic [ref=e1262]: "148"
+            - generic [ref=e1263]:
+              - img [ref=e1264]
+              - generic [ref=e1266]: 3613m
+            - generic [ref=e1267]:
+              - img [ref=e1268]
+              - generic [ref=e1271]: 45.867, 6.883
+          - generic [ref=e1272]:
+            - generic [ref=e1273]:
+              - img [ref=e1274]
+              - generic [ref=e1276]: No reviews yet
+            - link "View Details" [ref=e1277] [cursor=pointer]:
+              - /url: /shelter/f279f2f8-9093-49c4-87cd-cd658ca8e816
+        - generic [ref=e1279]:
+          - generic [ref=e1280]:
+            - heading "Refuge des Dix" [level=4] [ref=e1281]:
+              - link "Refuge des Dix" [ref=e1282] [cursor=pointer]:
+                - /url: /shelter/c7cbd4ad-c117-4f21-8a43-6dcee0825c8a
+            - generic [ref=e1283]:
+              - generic [ref=e1284]: Paid
+              - generic [ref=e1285]: hut
+          - generic [ref=e1286]:
+            - generic [ref=e1287]:
+              - img [ref=e1288]
+              - generic [ref=e1293]: "120"
+            - generic [ref=e1294]:
+              - img [ref=e1295]
+              - generic [ref=e1297]: 2928m
+            - generic [ref=e1298]:
+              - img [ref=e1299]
+              - generic [ref=e1302]: 46.017, 7.533
+          - generic [ref=e1303]:
+            - generic [ref=e1304]:
+              - img [ref=e1305]
+              - generic [ref=e1307]: No reviews yet
+            - link "View Details" [ref=e1308] [cursor=pointer]:
+              - /url: /shelter/c7cbd4ad-c117-4f21-8a43-6dcee0825c8a
+        - generic [ref=e1310]:
+          - generic [ref=e1311]:
+            - heading "Refuge des Oulettes" [level=4] [ref=e1312]:
+              - link "Refuge des Oulettes" [ref=e1313] [cursor=pointer]:
+                - /url: /shelter/51072360-9d33-48c3-8d87-1e86a22181a0
+            - generic [ref=e1314]:
+              - generic [ref=e1315]: Paid
+              - generic [ref=e1316]: hut
+          - generic [ref=e1317]:
+            - generic [ref=e1318]:
+              - img [ref=e1319]
+              - generic [ref=e1324]: "55"
+            - generic [ref=e1325]:
+              - img [ref=e1326]
+              - generic [ref=e1328]: 3100m
+            - generic [ref=e1329]:
+              - img [ref=e1330]
+              - generic [ref=e1333]: 42.917, -0.183
+          - generic [ref=e1334]:
+            - generic [ref=e1335]:
+              - img [ref=e1336]
+              - generic [ref=e1338]: No reviews yet
+            - link "View Details" [ref=e1339] [cursor=pointer]:
+              - /url: /shelter/51072360-9d33-48c3-8d87-1e86a22181a0
+        - generic [ref=e1341]:
+          - generic [ref=e1342]:
+            - heading "Refuge du Goûter" [level=4] [ref=e1343]:
+              - link "Refuge du Goûter" [ref=e1344] [cursor=pointer]:
+                - /url: /shelter/a32488ee-2e1d-4c02-9548-af473ca53464
+            - generic [ref=e1345]:
+              - generic [ref=e1346]: Paid
+              - generic [ref=e1347]: hut
+          - generic [ref=e1348]:
+            - generic [ref=e1349]:
+              - img [ref=e1350]
+              - generic [ref=e1355]: "120"
+            - generic [ref=e1356]:
+              - img [ref=e1357]
+              - generic [ref=e1359]: 3835m
+            - generic [ref=e1360]:
+              - img [ref=e1361]
+              - generic [ref=e1364]: 45.850, 6.817
+          - generic [ref=e1365]:
+            - generic [ref=e1366]:
+              - img [ref=e1367]
+              - generic [ref=e1369]: No reviews yet
+            - link "View Details" [ref=e1370] [cursor=pointer]:
+              - /url: /shelter/a32488ee-2e1d-4c02-9548-af473ca53464
+        - generic [ref=e1372]:
+          - generic [ref=e1373]:
+            - heading "Refuge du Nid d'Aigle" [level=4] [ref=e1374]:
+              - link "Refuge du Nid d'Aigle" [ref=e1375] [cursor=pointer]:
+                - /url: /shelter/88af48de-8d64-42e5-ae0d-bf2eff41e363
+            - generic [ref=e1376]:
+              - generic [ref=e1377]: Paid
+              - generic [ref=e1378]: hut
+          - generic [ref=e1379]:
+            - generic [ref=e1380]:
+              - img [ref=e1381]
+              - generic [ref=e1386]: "40"
+            - generic [ref=e1387]:
+              - img [ref=e1388]
+              - generic [ref=e1390]: 2372m
+            - generic [ref=e1391]:
+              - img [ref=e1392]
+              - generic [ref=e1395]: 45.817, 6.783
+          - generic [ref=e1396]:
+            - generic [ref=e1397]:
+              - img [ref=e1398]
+              - generic [ref=e1400]: No reviews yet
+            - link "View Details" [ref=e1401] [cursor=pointer]:
+              - /url: /shelter/88af48de-8d64-42e5-ae0d-bf2eff41e363
+        - generic [ref=e1403]:
+          - generic [ref=e1404]:
+            - heading "Refuge du Plan" [level=4] [ref=e1405]:
+              - link "Refuge du Plan" [ref=e1406] [cursor=pointer]:
+                - /url: /shelter/4c3a9012-f2a9-4004-9122-26be0cd89d9a
+            - generic [ref=e1407]:
+              - generic [ref=e1408]: Paid
+              - generic [ref=e1409]: hut
+          - generic [ref=e1410]:
+            - generic [ref=e1411]:
+              - img [ref=e1412]
+              - generic [ref=e1417]: "50"
+            - generic [ref=e1418]:
+              - img [ref=e1419]
+              - generic [ref=e1421]: 2050m
+            - generic [ref=e1422]:
+              - img [ref=e1423]
+              - generic [ref=e1426]: 45.917, 6.917
+          - generic [ref=e1427]:
+            - generic [ref=e1428]:
+              - img [ref=e1429]
+              - generic [ref=e1431]: No reviews yet
+            - link "View Details" [ref=e1432] [cursor=pointer]:
+              - /url: /shelter/4c3a9012-f2a9-4004-9122-26be0cd89d9a
+        - generic [ref=e1434]:
+          - generic [ref=e1435]:
+            - heading "Refugio Angel Orus" [level=4] [ref=e1436]:
+              - link "Refugio Angel Orus" [ref=e1437] [cursor=pointer]:
+                - /url: /shelter/f351c5fc-5bd5-45ff-a8ba-2e5d0d6119a3
+            - generic [ref=e1438]:
+              - generic [ref=e1439]: Paid
+              - generic [ref=e1440]: hut
+          - generic [ref=e1441]:
+            - generic [ref=e1442]:
+              - img [ref=e1443]
+              - generic [ref=e1448]: "70"
+            - generic [ref=e1449]:
+              - img [ref=e1450]
+              - generic [ref=e1452]: 2100m
+            - generic [ref=e1453]:
+              - img [ref=e1454]
+              - generic [ref=e1457]: 42.700, 0.667
+          - generic [ref=e1458]:
+            - generic [ref=e1459]:
+              - img [ref=e1460]
+              - generic [ref=e1462]: No reviews yet
+            - link "View Details" [ref=e1463] [cursor=pointer]:
+              - /url: /shelter/f351c5fc-5bd5-45ff-a8ba-2e5d0d6119a3
+        - generic [ref=e1465]:
+          - generic [ref=e1466]:
+            - heading "Refugio de Goriz" [level=4] [ref=e1467]:
+              - link "Refugio de Goriz" [ref=e1468] [cursor=pointer]:
+                - /url: /shelter/a75c9929-6726-4601-a7b5-2ace74bb0cc1
+            - generic [ref=e1469]:
+              - generic [ref=e1470]: Paid
+              - generic [ref=e1471]: hut
+          - generic [ref=e1472]:
+            - generic [ref=e1473]:
+              - img [ref=e1474]
+              - generic [ref=e1479]: "90"
+            - generic [ref=e1480]:
+              - img [ref=e1481]
+              - generic [ref=e1483]: 2200m
+            - generic [ref=e1484]:
+              - img [ref=e1485]
+              - generic [ref=e1488]: 42.667, -0.033
+          - generic [ref=e1489]:
+            - generic [ref=e1490]:
+              - img [ref=e1491]
+              - generic [ref=e1493]: No reviews yet
+            - link "View Details" [ref=e1494] [cursor=pointer]:
+              - /url: /shelter/a75c9929-6726-4601-a7b5-2ace74bb0cc1
+        - generic [ref=e1496]:
+          - generic [ref=e1497]:
+            - heading "Retezat Mountain Hut" [level=4] [ref=e1498]:
+              - link "Retezat Mountain Hut" [ref=e1499] [cursor=pointer]:
+                - /url: /shelter/ce90ab85-cb2f-4cd6-9730-209dc2e8f4f4
+            - generic [ref=e1500]:
+              - generic [ref=e1501]: Paid
+              - generic [ref=e1502]: hut
+          - generic [ref=e1503]:
+            - generic [ref=e1504]:
+              - img [ref=e1505]
+              - generic [ref=e1510]: "35"
+            - generic [ref=e1511]:
+              - img [ref=e1512]
+              - generic [ref=e1514]: 2040m
+            - generic [ref=e1515]:
+              - img [ref=e1516]
+              - generic [ref=e1519]: 45.367, 22.883
+          - generic [ref=e1520]:
+            - generic [ref=e1521]:
+              - img [ref=e1522]
+              - generic [ref=e1524]: No reviews yet
+            - link "View Details" [ref=e1525] [cursor=pointer]:
+              - /url: /shelter/ce90ab85-cb2f-4cd6-9730-209dc2e8f4f4
+        - generic [ref=e1527]:
+          - generic [ref=e1528]:
+            - heading "Rifugio Benevolo" [level=4] [ref=e1529]:
+              - link "Rifugio Benevolo" [ref=e1530] [cursor=pointer]:
+                - /url: /shelter/53e2b0a5-5967-4afe-b50c-a029de841391
+            - generic [ref=e1531]:
+              - generic [ref=e1532]: Paid
+              - generic [ref=e1533]: hut
+          - generic [ref=e1534]:
+            - generic [ref=e1535]:
+              - img [ref=e1536]
+              - generic [ref=e1541]: "50"
+            - generic [ref=e1542]:
+              - img [ref=e1543]
+              - generic [ref=e1545]: 2285m
+            - generic [ref=e1546]:
+              - img [ref=e1547]
+              - generic [ref=e1550]: 45.667, 7.333
+          - generic [ref=e1551]:
+            - generic [ref=e1552]:
+              - img [ref=e1553]
+              - generic [ref=e1555]: No reviews yet
+            - link "View Details" [ref=e1556] [cursor=pointer]:
+              - /url: /shelter/53e2b0a5-5967-4afe-b50c-a029de841391
+        - generic [ref=e1558]:
+          - generic [ref=e1559]:
+            - heading "Rifugio Coda" [level=4] [ref=e1560]:
+              - link "Rifugio Coda" [ref=e1561] [cursor=pointer]:
+                - /url: /shelter/0f15769f-8dd9-423a-b103-ecd879829829
+            - generic [ref=e1562]:
+              - generic [ref=e1563]: Paid
+              - generic [ref=e1564]: hut
+          - generic [ref=e1565]:
+            - generic [ref=e1566]:
+              - img [ref=e1567]
+              - generic [ref=e1572]: "30"
+            - generic [ref=e1573]:
+              - img [ref=e1574]
+              - generic [ref=e1576]: 2280m
+            - generic [ref=e1577]:
+              - img [ref=e1578]
+              - generic [ref=e1581]: 45.800, 7.100
+          - generic [ref=e1582]:
+            - generic [ref=e1583]:
+              - img [ref=e1584]
+              - generic [ref=e1586]: No reviews yet
+            - link "View Details" [ref=e1587] [cursor=pointer]:
+              - /url: /shelter/0f15769f-8dd9-423a-b103-ecd879829829
+        - generic [ref=e1589]:
+          - generic [ref=e1590]:
+            - heading "Rifugio Elisabetta" [level=4] [ref=e1591]:
+              - link "Rifugio Elisabetta" [ref=e1592] [cursor=pointer]:
+                - /url: /shelter/c2997bbd-2bc6-4453-8dc5-86b45bf15fd2
+            - generic [ref=e1593]:
+              - generic [ref=e1594]: Paid
+              - generic [ref=e1595]: hut
+          - generic [ref=e1596]:
+            - generic [ref=e1597]:
+              - img [ref=e1598]
+              - generic [ref=e1603]: "40"
+            - generic [ref=e1604]:
+              - img [ref=e1605]
+              - generic [ref=e1607]: 2195m
+            - generic [ref=e1608]:
+              - img [ref=e1609]
+              - generic [ref=e1612]: 45.783, 6.950
+          - generic [ref=e1613]:
+            - generic [ref=e1614]:
+              - img [ref=e1615]
+              - generic [ref=e1617]: No reviews yet
+            - link "View Details" [ref=e1618] [cursor=pointer]:
+              - /url: /shelter/c2997bbd-2bc6-4453-8dc5-86b45bf15fd2
+        - generic [ref=e1620]:
+          - generic [ref=e1621]:
+            - heading "Rifugio Gonella" [level=4] [ref=e1622]:
+              - link "Rifugio Gonella" [ref=e1623] [cursor=pointer]:
+                - /url: /shelter/2f710ec0-5522-4cb4-bda5-a362148f28b5
+            - generic [ref=e1624]:
+              - generic [ref=e1625]: Paid
+              - generic [ref=e1626]: hut
+          - generic [ref=e1627]:
+            - generic [ref=e1628]:
+              - img [ref=e1629]
+              - generic [ref=e1634]: "55"
+            - generic [ref=e1635]:
+              - img [ref=e1636]
+              - generic [ref=e1638]: 3071m
+            - generic [ref=e1639]:
+              - img [ref=e1640]
+              - generic [ref=e1643]: 45.817, 6.917
+          - generic [ref=e1644]:
+            - generic [ref=e1645]:
+              - img [ref=e1646]
+              - generic [ref=e1648]: No reviews yet
+            - link "View Details" [ref=e1649] [cursor=pointer]:
+              - /url: /shelter/2f710ec0-5522-4cb4-bda5-a362148f28b5
+        - generic [ref=e1651]:
+          - generic [ref=e1652]:
+            - heading "Rifugio Quintino Sella" [level=4] [ref=e1653]:
+              - link "Rifugio Quintino Sella" [ref=e1654] [cursor=pointer]:
+                - /url: /shelter/82849e89-4a6c-4d89-a3bb-405fa8695013
+            - generic [ref=e1655]:
+              - generic [ref=e1656]: Paid
+              - generic [ref=e1657]: hut
+          - generic [ref=e1658]:
+            - generic [ref=e1659]:
+              - img [ref=e1660]
+              - generic [ref=e1665]: "85"
+            - generic [ref=e1666]:
+              - img [ref=e1667]
+              - generic [ref=e1669]: 3585m
+            - generic [ref=e1670]:
+              - img [ref=e1671]
+              - generic [ref=e1674]: 45.933, 7.883
+          - generic [ref=e1675]:
+            - generic [ref=e1676]:
+              - img [ref=e1677]
+              - generic [ref=e1679]: No reviews yet
+            - link "View Details" [ref=e1680] [cursor=pointer]:
+              - /url: /shelter/82849e89-4a6c-4d89-a3bb-405fa8695013
+        - generic [ref=e1682]:
+          - generic [ref=e1683]:
+            - heading "Rifugio Torino" [level=4] [ref=e1684]:
+              - link "Rifugio Torino" [ref=e1685] [cursor=pointer]:
+                - /url: /shelter/e5a2c9af-dd5e-48ab-bd40-7df4e08457e5
+            - generic [ref=e1686]:
+              - generic [ref=e1687]: Paid
+              - generic [ref=e1688]: hut
+          - generic [ref=e1689]:
+            - generic [ref=e1690]:
+              - img [ref=e1691]
+              - generic [ref=e1696]: "75"
+            - generic [ref=e1697]:
+              - img [ref=e1698]
+              - generic [ref=e1700]: 3375m
+            - generic [ref=e1701]:
+              - img [ref=e1702]
+              - generic [ref=e1705]: 45.850, 6.883
+          - generic [ref=e1706]:
+            - generic [ref=e1707]:
+              - img [ref=e1708]
+              - generic [ref=e1710]: No reviews yet
+            - link "View Details" [ref=e1711] [cursor=pointer]:
+              - /url: /shelter/e5a2c9af-dd5e-48ab-bd40-7df4e08457e5
+        - generic [ref=e1713]:
+          - generic [ref=e1714]:
+            - heading "Rifugio Vittorio Sella" [level=4] [ref=e1715]:
+              - link "Rifugio Vittorio Sella" [ref=e1716] [cursor=pointer]:
+                - /url: /shelter/ebfaef5a-592b-452b-9278-7a00537e6697
+            - generic [ref=e1717]:
+              - generic [ref=e1718]: Paid
+              - generic [ref=e1719]: hut
+          - generic [ref=e1720]:
+            - generic [ref=e1721]:
+              - img [ref=e1722]
+              - generic [ref=e1727]: "65"
+            - generic [ref=e1728]:
+              - img [ref=e1729]
+              - generic [ref=e1731]: 2584m
+            - generic [ref=e1732]:
+              - img [ref=e1733]
+              - generic [ref=e1736]: 45.917, 7.867
+          - generic [ref=e1737]:
+            - generic [ref=e1738]:
+              - img [ref=e1739]
+              - generic [ref=e1741]: No reviews yet
+            - link "View Details" [ref=e1742] [cursor=pointer]:
+              - /url: /shelter/ebfaef5a-592b-452b-9278-7a00537e6697
+        - generic [ref=e1744]:
+          - generic [ref=e1745]:
+            - heading "Rotondo Hut" [level=4] [ref=e1746]:
+              - link "Rotondo Hut" [ref=e1747] [cursor=pointer]:
+                - /url: /shelter/63691cd3-0eee-47dc-aa17-35d4ea914bef
+            - generic [ref=e1748]:
+              - generic [ref=e1749]: Paid
+              - generic [ref=e1750]: hut
+          - generic [ref=e1751]:
+            - generic [ref=e1752]:
+              - img [ref=e1753]
+              - generic [ref=e1758]: "60"
+            - generic [ref=e1759]:
+              - img [ref=e1760]
+              - generic [ref=e1762]: 2570m
+            - generic [ref=e1763]:
+              - img [ref=e1764]
+              - generic [ref=e1767]: 46.533, 8.433
+          - generic [ref=e1768]:
+            - generic [ref=e1769]:
+              - img [ref=e1770]
+              - generic [ref=e1772]: No reviews yet
+            - link "View Details" [ref=e1773] [cursor=pointer]:
+              - /url: /shelter/63691cd3-0eee-47dc-aa17-35d4ea914bef
+        - generic [ref=e1775]:
+          - generic [ref=e1776]:
+            - heading "Salzburg Alpine Shelter" [level=4] [ref=e1777]:
+              - link "Salzburg Alpine Shelter" [ref=e1778] [cursor=pointer]:
+                - /url: /shelter/7fb51483-ca4a-4f09-b8c2-77e4b0ded46b
+            - generic [ref=e1779]:
+              - generic [ref=e1780]: Free
+              - generic [ref=e1781]: shelter
+          - generic [ref=e1782]:
+            - generic [ref=e1783]:
+              - img [ref=e1784]
+              - generic [ref=e1789]: "18"
+            - generic [ref=e1790]:
+              - img [ref=e1791]
+              - generic [ref=e1793]: 1900m
+            - generic [ref=e1794]:
+              - img [ref=e1795]
+              - generic [ref=e1798]: 47.400, 13.200
+          - generic [ref=e1799]:
+            - generic [ref=e1800]:
+              - img [ref=e1801]
+              - generic [ref=e1803]: No reviews yet
+            - link "View Details" [ref=e1804] [cursor=pointer]:
+              - /url: /shelter/7fb51483-ca4a-4f09-b8c2-77e4b0ded46b
+        - generic [ref=e1806]:
+          - generic [ref=e1807]:
+            - heading "Savoy Alpine Shelter" [level=4] [ref=e1808]:
+              - link "Savoy Alpine Shelter" [ref=e1809] [cursor=pointer]:
+                - /url: /shelter/5287c818-69eb-4a5c-aaa6-336d5a09f109
+            - generic [ref=e1810]:
+              - generic [ref=e1811]: Free
+              - generic [ref=e1812]: shelter
+          - generic [ref=e1813]:
+            - generic [ref=e1814]:
+              - img [ref=e1815]
+              - generic [ref=e1820]: "20"
+            - generic [ref=e1821]:
+              - img [ref=e1822]
+              - generic [ref=e1824]: 1900m
+            - generic [ref=e1825]:
+              - img [ref=e1826]
+              - generic [ref=e1829]: 45.700, 6.700
+          - generic [ref=e1830]:
+            - generic [ref=e1831]:
+              - img [ref=e1832]
+              - generic [ref=e1834]: No reviews yet
+            - link "View Details" [ref=e1835] [cursor=pointer]:
+              - /url: /shelter/5287c818-69eb-4a5c-aaa6-336d5a09f109
+        - generic [ref=e1837]:
+          - generic [ref=e1838]:
+            - heading "Schneefernerhaus" [level=4] [ref=e1839]:
+              - link "Schneefernerhaus" [ref=e1840] [cursor=pointer]:
+                - /url: /shelter/0a98446b-3ae3-4b4f-8f79-2734adc28c20
+            - generic [ref=e1841]:
+              - generic [ref=e1842]: Paid
+              - generic [ref=e1843]: hut
+          - generic [ref=e1844]:
+            - generic [ref=e1845]:
+              - img [ref=e1846]
+              - generic [ref=e1851]: "45"
+            - generic [ref=e1852]:
+              - img [ref=e1853]
+              - generic [ref=e1855]: 2650m
+            - generic [ref=e1856]:
+              - img [ref=e1857]
+              - generic [ref=e1860]: 47.417, 10.983
+          - generic [ref=e1861]:
+            - generic [ref=e1862]:
+              - img [ref=e1863]
+              - generic [ref=e1865]: No reviews yet
+            - link "View Details" [ref=e1866] [cursor=pointer]:
+              - /url: /shelter/0a98446b-3ae3-4b4f-8f79-2734adc28c20
+        - generic [ref=e1868]:
+          - generic [ref=e1869]:
+            - heading "Similaun Hut" [level=4] [ref=e1870]:
+              - link "Similaun Hut" [ref=e1871] [cursor=pointer]:
+                - /url: /shelter/55a1273b-255d-4082-b8f4-c41d11b9e0d2
+            - generic [ref=e1872]:
+              - generic [ref=e1873]: Paid
+              - generic [ref=e1874]: hut
+          - generic [ref=e1875]:
+            - generic [ref=e1876]:
+              - img [ref=e1877]
+              - generic [ref=e1882]: "80"
+            - generic [ref=e1883]:
+              - img [ref=e1884]
+              - generic [ref=e1886]: 3019m
+            - generic [ref=e1887]:
+              - img [ref=e1888]
+              - generic [ref=e1891]: 46.783, 10.867
+          - generic [ref=e1892]:
+            - generic [ref=e1893]:
+              - img [ref=e1894]
+              - generic [ref=e1896]: No reviews yet
+            - link "View Details" [ref=e1897] [cursor=pointer]:
+              - /url: /shelter/55a1273b-255d-4082-b8f4-c41d11b9e0d2
+        - generic [ref=e1899]:
+          - generic [ref=e1900]:
+            - heading "Tatra Emergency Shelter" [level=4] [ref=e1901]:
+              - link "Tatra Emergency Shelter" [ref=e1902] [cursor=pointer]:
+                - /url: /shelter/7bd15010-5f4d-45e2-aa74-0d568eaf5ca1
+            - generic [ref=e1903]:
+              - generic [ref=e1904]: Free
+              - generic [ref=e1905]: shelter
+          - generic [ref=e1906]:
+            - generic [ref=e1907]:
+              - img [ref=e1908]
+              - generic [ref=e1913]: "8"
+            - generic [ref=e1914]:
+              - img [ref=e1915]
+              - generic [ref=e1917]: 2000m
+            - generic [ref=e1918]:
+              - img [ref=e1919]
+              - generic [ref=e1922]: 49.200, 20.000
+          - generic [ref=e1923]:
+            - generic [ref=e1924]:
+              - img [ref=e1925]
+              - generic [ref=e1927]: No reviews yet
+            - link "View Details" [ref=e1928] [cursor=pointer]:
+              - /url: /shelter/7bd15010-5f4d-45e2-aa74-0d568eaf5ca1
+        - generic [ref=e1930]:
+          - generic [ref=e1931]:
+            - heading "Triglav Hut" [level=4] [ref=e1932]:
+              - link "Triglav Hut" [ref=e1933] [cursor=pointer]:
+                - /url: /shelter/ed8c7e57-8ecb-41bf-8d04-b4eedb8769fa
+            - generic [ref=e1934]:
+              - generic [ref=e1935]: Paid
+              - generic [ref=e1936]: hut
+          - generic [ref=e1937]:
+            - generic [ref=e1938]:
+              - img [ref=e1939]
+              - generic [ref=e1944]: "65"
+            - generic [ref=e1945]:
+              - img [ref=e1946]
+              - generic [ref=e1948]: 2864m
+            - generic [ref=e1949]:
+              - img [ref=e1950]
+              - generic [ref=e1953]: 46.383, 13.833
+          - generic [ref=e1954]:
+            - generic [ref=e1955]:
+              - img [ref=e1956]
+              - generic [ref=e1958]: No reviews yet
+            - link "View Details" [ref=e1959] [cursor=pointer]:
+              - /url: /shelter/ed8c7e57-8ecb-41bf-8d04-b4eedb8769fa
+        - generic [ref=e1961]:
+          - generic [ref=e1962]:
+            - heading "Tyrol Valley Shelter" [level=4] [ref=e1963]:
+              - link "Tyrol Valley Shelter" [ref=e1964] [cursor=pointer]:
+                - /url: /shelter/01973f45-605b-42ab-83f5-7caf46dab303
+            - generic [ref=e1965]:
+              - generic [ref=e1966]: Free
+              - generic [ref=e1967]: shelter
+          - generic [ref=e1968]:
+            - generic [ref=e1969]:
+              - img [ref=e1970]
+              - generic [ref=e1975]: "15"
+            - generic [ref=e1976]:
+              - img [ref=e1977]
+              - generic [ref=e1979]: 1650m
+            - generic [ref=e1980]:
+              - img [ref=e1981]
+              - generic [ref=e1984]: 47.200, 11.800
+          - generic [ref=e1985]:
+            - generic [ref=e1986]:
+              - img [ref=e1987]
+              - generic [ref=e1989]: No reviews yet
+            - link "View Details" [ref=e1990] [cursor=pointer]:
+              - /url: /shelter/01973f45-605b-42ab-83f5-7caf46dab303
+        - generic [ref=e1992]:
+          - generic [ref=e1993]:
+            - heading "Val d'Aosta Shelter" [level=4] [ref=e1994]:
+              - link "Val d'Aosta Shelter" [ref=e1995] [cursor=pointer]:
+                - /url: /shelter/e21237a2-30f2-4a71-b074-721b882fb35d
+            - generic [ref=e1996]:
+              - generic [ref=e1997]: Free
+              - generic [ref=e1998]: shelter
+          - generic [ref=e1999]:
+            - generic [ref=e2000]:
+              - img [ref=e2001]
+              - generic [ref=e2006]: "12"
+            - generic [ref=e2007]:
+              - img [ref=e2008]
+              - generic [ref=e2010]: 2100m
+            - generic [ref=e2011]:
+              - img [ref=e2012]
+              - generic [ref=e2015]: 45.700, 7.400
+          - generic [ref=e2016]:
+            - generic [ref=e2017]:
+              - img [ref=e2018]
+              - generic [ref=e2020]: No reviews yet
+            - link "View Details" [ref=e2021] [cursor=pointer]:
+              - /url: /shelter/e21237a2-30f2-4a71-b074-721b882fb35d
+        - generic [ref=e2023]:
+          - generic [ref=e2024]:
+            - heading "Val Müstair Shelter" [level=4] [ref=e2025]:
+              - link "Val Müstair Shelter" [ref=e2026] [cursor=pointer]:
+                - /url: /shelter/86b5154f-ca02-4d06-9bcf-cdfdfd001613
+            - generic [ref=e2027]:
+              - generic [ref=e2028]: Free
+              - generic [ref=e2029]: shelter
+          - generic [ref=e2030]:
+            - generic [ref=e2031]:
+              - img [ref=e2032]
+              - generic [ref=e2037]: "20"
+            - generic [ref=e2038]:
+              - img [ref=e2039]
+              - generic [ref=e2041]: 1800m
+            - generic [ref=e2042]:
+              - img [ref=e2043]
+              - generic [ref=e2046]: 46.600, 10.433
+          - generic [ref=e2047]:
+            - generic [ref=e2048]:
+              - img [ref=e2049]
+              - generic [ref=e2051]: No reviews yet
+            - link "View Details" [ref=e2052] [cursor=pointer]:
+              - /url: /shelter/86b5154f-ca02-4d06-9bcf-cdfdfd001613
+        - generic [ref=e2054]:
+          - generic [ref=e2055]:
+            - heading "Vipava Valley Shelter" [level=4] [ref=e2056]:
+              - link "Vipava Valley Shelter" [ref=e2057] [cursor=pointer]:
+                - /url: /shelter/ab1b0edb-4329-47ab-a9b6-7e42f9c75063
+            - generic [ref=e2058]:
+              - generic [ref=e2059]: Free
+              - generic [ref=e2060]: shelter
+          - generic [ref=e2061]:
+            - generic [ref=e2062]:
+              - img [ref=e2063]
+              - generic [ref=e2068]: "14"
+            - generic [ref=e2069]:
+              - img [ref=e2070]
+              - generic [ref=e2072]: 1600m
+            - generic [ref=e2073]:
+              - img [ref=e2074]
+              - generic [ref=e2077]: 46.000, 14.000
+          - generic [ref=e2078]:
+            - generic [ref=e2079]:
+              - img [ref=e2080]
+              - generic [ref=e2082]: No reviews yet
+            - link "View Details" [ref=e2083] [cursor=pointer]:
+              - /url: /shelter/ab1b0edb-4329-47ab-a9b6-7e42f9c75063
+        - generic [ref=e2085]:
+          - generic [ref=e2086]:
+            - heading "Vodnikov Dom" [level=4] [ref=e2087]:
+              - link "Vodnikov Dom" [ref=e2088] [cursor=pointer]:
+                - /url: /shelter/8b9f42a9-5cb1-4e36-a610-894c2e842b1b
+            - generic [ref=e2089]:
+              - generic [ref=e2090]: Paid
+              - generic [ref=e2091]: hut
+          - generic [ref=e2092]:
+            - generic [ref=e2093]:
+              - img [ref=e2094]
+              - generic [ref=e2099]: "70"
+            - generic [ref=e2100]:
+              - img [ref=e2101]
+              - generic [ref=e2103]: 1817m
+            - generic [ref=e2104]:
+              - img [ref=e2105]
+              - generic [ref=e2108]: 46.350, 13.800
+          - generic [ref=e2109]:
+            - generic [ref=e2110]:
+              - img [ref=e2111]
+              - generic [ref=e2113]: No reviews yet
+            - link "View Details" [ref=e2114] [cursor=pointer]:
+              - /url: /shelter/8b9f42a9-5cb1-4e36-a610-894c2e842b1b
+        - generic [ref=e2116]:
+          - generic [ref=e2117]:
+            - heading "Vosges Mountain Hut" [level=4] [ref=e2118]:
+              - link "Vosges Mountain Hut" [ref=e2119] [cursor=pointer]:
+                - /url: /shelter/7093e3b7-d131-4d3d-bee4-3ee7f3947cf2
+            - generic [ref=e2120]:
+              - generic [ref=e2121]: Paid
+              - generic [ref=e2122]: hut
+          - generic [ref=e2123]:
+            - generic [ref=e2124]:
+              - img [ref=e2125]
+              - generic [ref=e2130]: "30"
+            - generic [ref=e2131]:
+              - img [ref=e2132]
+              - generic [ref=e2134]: 1350m
+            - generic [ref=e2135]:
+              - img [ref=e2136]
+              - generic [ref=e2139]: 48.100, 7.000
+          - generic [ref=e2140]:
+            - generic [ref=e2141]:
+              - img [ref=e2142]
+              - generic [ref=e2144]: No reviews yet
+            - link "View Details" [ref=e2145] [cursor=pointer]:
+              - /url: /shelter/7093e3b7-d131-4d3d-bee4-3ee7f3947cf2
+        - generic [ref=e2147]:
+          - generic [ref=e2148]:
+            - heading "Warnsdorfer Hut" [level=4] [ref=e2149]:
+              - link "Warnsdorfer Hut" [ref=e2150] [cursor=pointer]:
+                - /url: /shelter/22b677e6-9758-4c03-848c-88acc137de22
+            - generic [ref=e2151]:
+              - generic [ref=e2152]: Paid
+              - generic [ref=e2153]: hut
+          - generic [ref=e2154]:
+            - generic [ref=e2155]:
+              - img [ref=e2156]
+              - generic [ref=e2161]: "55"
+            - generic [ref=e2162]:
+              - img [ref=e2163]
+              - generic [ref=e2165]: 2336m
+            - generic [ref=e2166]:
+              - img [ref=e2167]
+              - generic [ref=e2170]: 47.017, 12.933
+          - generic [ref=e2171]:
+            - generic [ref=e2172]:
+              - img [ref=e2173]
+              - generic [ref=e2175]: No reviews yet
+            - link "View Details" [ref=e2176] [cursor=pointer]:
+              - /url: /shelter/22b677e6-9758-4c03-848c-88acc137de22
+        - generic [ref=e2178]:
+          - generic [ref=e2179]:
+            - heading "Watzmannhaus" [level=4] [ref=e2180]:
+              - link "Watzmannhaus" [ref=e2181] [cursor=pointer]:
+                - /url: /shelter/97d55dd7-08ac-4c45-9ecd-50420470fbf7
+            - generic [ref=e2182]:
+              - generic [ref=e2183]: Paid
+              - generic [ref=e2184]: hut
+          - generic [ref=e2185]:
+            - generic [ref=e2186]:
+              - img [ref=e2187]
+              - generic [ref=e2192]: "90"
+            - generic [ref=e2193]:
+              - img [ref=e2194]
+              - generic [ref=e2196]: 1930m
+            - generic [ref=e2197]:
+              - img [ref=e2198]
+              - generic [ref=e2201]: 47.567, 12.917
+          - generic [ref=e2202]:
+            - generic [ref=e2203]:
+              - img [ref=e2204]
+              - generic [ref=e2206]: No reviews yet
+            - link "View Details" [ref=e2207] [cursor=pointer]:
+              - /url: /shelter/97d55dd7-08ac-4c45-9ecd-50420470fbf7
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e2213] [cursor=pointer]:
+    - img [ref=e2214] [cursor=pointer]
+  - alert [ref=e2217]
+```

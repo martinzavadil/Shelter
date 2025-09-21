@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Sheltr Test" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <name>Sample Alps Route</name>
+    <desc>A sample hiking route in the Swiss Alps</desc>
+  </metadata>
+  <trk>
+    <name>Matterhorn Base Circuit</name>
+    <desc>A scenic route around the base of the Matterhorn</desc>
+    <trkseg>
+      <trkpt lat="46.0217" lon="7.7491">
+        <ele>1620</ele>
+      </trkpt>
+      <trkpt lat="46.0227" lon="7.7501">
+        <ele>1625</ele>
+      </trkpt>
+      <trkpt lat="46.0237" lon="7.7511">
+        <ele>1630</ele>
+      </trkpt>
+      <trkpt lat="46.0247" lon="7.7521">
+        <ele>1635</ele>
+      </trkpt>
+      <trkpt lat="46.0257" lon="7.7531">
+        <ele>1640</ele>
+      </trkpt>
+      <trkpt lat="46.0267" lon="7.7541">
+        <ele>1645</ele>
+      </trkpt>
+      <trkpt lat="46.0277" lon="7.7551">
+        <ele>1650</ele>
+      </trkpt>
+      <trkpt lat="46.0287" lon="7.7561">
+        <ele>1655</ele>
+      </trkpt>
+      <trkpt lat="46.0297" lon="7.7571">
+        <ele>1660</ele>
+      </trkpt>
+      <trkpt lat="46.0307" lon="7.7581">
+        <ele>1665</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+  <wpt lat="46.0217" lon="7.7491">
+    <name>Start Point</name>
+    <desc>Trail beginning</desc>
+  </wpt>
+  <wpt lat="46.0307" lon="7.7581">
+    <name>End Point</name>
+    <desc>Trail end</desc>
+  </wpt>
+</gpx>

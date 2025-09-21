@@ -1,0 +1,135 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Shelter {
+  id           String   @id @default(uuid())
+  name         String
+  description  String?
+  type         String   // 'hut' | 'shelter'
+  isFree       Boolean  @default(false)
+  capacity     Int?
+  isServiced   Boolean  @default(false)
+  accessibility String[] // e.g. ['car','foot','bike','public_transport']
+  amenities     String[] // e.g. ['toilet','water','electricity','wifi','food']
+  latitude     Float?
+  longitude    Float?
+  elevation    Int?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  reviews Review[]
+  photos  Photo[]
+
+  @@map("shelters")
+}
+
+model Review {
+  id        String   @id @default(uuid())
+  shelterId String
+  userId    String?
+  rating    Int
+  comment   String?
+  createdAt DateTime @default(now())
+  shelter   Shelter  @relation(fields: [shelterId], references: [id], onDelete: Cascade)
+  user      User?    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("reviews")
+}
+
+model Photo {
+  id        String   @id @default(uuid())
+  shelterId String
+  userId    String?
+  url       String
+  filename  String?
+  size      Int?
+  createdAt DateTime @default(now())
+  shelter   Shelter  @relation(fields: [shelterId], references: [id], onDelete: Cascade)
+  user      User?    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("photos")
+}
+
+model Trip {
+  id            String   @id @default(uuid())
+  userId        String?
+  name          String?
+  shelterIds    String[] // store selected shelter IDs
+  estimatedDays Int?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  user          User?    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("trips")
+}
+
+// NextAuth models
+model Account {
+  id                String  @id @default(uuid())
+  userId            String  @map("user_id")
+  type              String
+  provider          String
+  providerAccountId String  @map("provider_account_id")
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+  @@map("accounts")
+}
+
+model Session {
+  id           String   @id @default(uuid())
+  sessionToken String   @unique @map("session_token")
+  userId       String   @map("user_id")
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("sessions")
+}
+
+model User {
+  id            String    @id @default(uuid())
+  name          String?
+  email         String    @unique
+  emailVerified DateTime? @map("email_verified")
+  image         String?
+  hashedPassword String?  @map("hashed_password")
+  createdAt     DateTime  @default(now()) @map("created_at")
+  updatedAt     DateTime  @updatedAt @map("updated_at")
+
+  accounts Account[]
+  sessions Session[]
+  reviews  Review[]
+  photos   Photo[]
+  trips    Trip[]
+
+  @@map("users")
+}
+
+model VerificationToken {
+  identifier String
+  token      String
+  expires    DateTime
+
+  @@unique([identifier, token])
+  @@map("verificationtokens")
+}
