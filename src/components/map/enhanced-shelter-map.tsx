@@ -235,7 +235,7 @@ export default function EnhancedShelterMap({ initialShelters }: EnhancedShelterM
                       </div>
                       <div className="mt-3 pt-2 border-t">
                         <Button asChild size="sm" className="w-full">
-                          <Link href={`/shelter/${shelter.id}`}>
+                          <Link href={`/shelter/${shelter.id}`} style={{ color: 'white' }}>
                             View Details
                           </Link>
                         </Button>
