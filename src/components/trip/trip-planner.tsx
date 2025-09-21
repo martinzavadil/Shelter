@@ -5,6 +5,12 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Stage, formatTime } from '@/lib/trip-utils'
 import { Route, Clock, Mountain, ArrowRight, GripVertical, X, MapPin } from 'lucide-react'
+import dynamic from 'next/dynamic'
+
+const StageMap = dynamic(() => import('./stage-map').then(mod => ({ default: mod.StageMap })), {
+  ssr: false,
+  loading: () => <div className="h-64 bg-muted rounded-lg animate-pulse" />
+})
 
 interface Shelter {
   id: string
@@ -174,26 +180,31 @@ export function TripPlanner({ selectedShelters, tripStages, onShelterReorder, on
                           </div>
                         </div>
 
-                        <div className="space-y-3">
+                        <div className="space-y-4">
                           {stages.map((stage) => (
-                            <div
-                              key={stage.id}
-                              className="flex items-center gap-3 p-3 bg-muted/50 rounded-lg"
-                            >
-                              <div className="flex-1">
-                                <div className="flex items-center gap-2 font-medium text-sm">
-                                  <span className="truncate">{stage.from.name}</span>
-                                  <ArrowRight className="h-3 w-3 text-muted-foreground flex-shrink-0" />
-                                  <span className="truncate">{stage.to.name}</span>
-                                </div>
-                                <div className="flex gap-4 text-xs text-muted-foreground mt-1">
-                                  <span>{stage.distance.toFixed(1)} km</span>
-                                  <span>{formatTime(stage.estimatedTime)}</span>
-                                  {stage.elevationGain > 0 && (
-                                    <span>+{Math.round(stage.elevationGain)}m elevation</span>
-                                  )}
+                            <div key={stage.id} className="space-y-3">
+                              <div className="flex items-center gap-3 p-3 bg-muted/50 rounded-lg">
+                                <div className="flex-1">
+                                  <div className="flex items-center gap-2 font-medium text-sm">
+                                    <span className="truncate">{stage.from.name}</span>
+                                    <ArrowRight className="h-3 w-3 text-muted-foreground flex-shrink-0" />
+                                    <span className="truncate">{stage.to.name}</span>
+                                  </div>
+                                  <div className="flex gap-4 text-xs text-muted-foreground mt-1">
+                                    <span>{stage.distance.toFixed(1)} km</span>
+                                    <span>{formatTime(stage.estimatedTime)}</span>
+                                    {stage.elevationGain > 0 && (
+                                      <span>+{Math.round(stage.elevationGain)}m elevation</span>
+                                    )}
+                                  </div>
                                 </div>
                               </div>
+
+                              {/* Stage Map */}
+                              {stage.from.latitude && stage.from.longitude &&
+                               stage.to.latitude && stage.to.longitude && (
+                                <StageMap stage={stage} />
+                              )}
                             </div>
                           ))}
                         </div>
