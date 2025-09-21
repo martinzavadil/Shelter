@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
-import { prisma } from '@/lib/prisma'
+import { supabase } from '@/lib/supabase'
 
 // GET /api/trips - Get user's trips
 export async function GET(request: NextRequest) {
@@ -11,19 +11,21 @@ export async function GET(request: NextRequest) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
     }
 
-    const trips = await prisma.trip.findMany({
-      where: { userId: session.user.id },
-      orderBy: { createdAt: 'desc' },
-      select: {
-        id: true,
-        name: true,
-        shelterIds: true,
-        estimatedDays: true,
-        createdAt: true
-      }
-    })
+    const { data: trips, error } = await supabase
+      .from('trips')
+      .select('id, name, shelterIds, estimatedDays, createdAt')
+      .eq('userId', session.user.id)
+      .order('createdAt', { ascending: false })
 
-    return NextResponse.json({ trips })
+    if (error) {
+      console.error('Error fetching trips:', error)
+      return NextResponse.json(
+        { error: 'Failed to fetch trips' },
+        { status: 500 }
+      )
+    }
+
+    return NextResponse.json({ trips: trips || [] })
   } catch (error) {
     console.error('Error fetching trips:', error)
     return NextResponse.json(
@@ -52,12 +54,20 @@ export async function POST(request: NextRequest) {
     }
 
     // Validate that all shelters exist
-    const existingShelters = await prisma.shelter.findMany({
-      where: { id: { in: shelterIds } },
-      select: { id: true }
-    })
+    const { data: existingShelters, error: shelterError } = await supabase
+      .from('shelters')
+      .select('id')
+      .in('id', shelterIds)
 
-    if (existingShelters.length !== shelterIds.length) {
+    if (shelterError) {
+      console.error('Error validating shelters:', shelterError)
+      return NextResponse.json(
+        { error: 'Failed to validate shelters' },
+        { status: 500 }
+      )
+    }
+
+    if (!existingShelters || existingShelters.length !== shelterIds.length) {
       return NextResponse.json(
         { error: 'One or more shelters not found' },
         { status: 404 }
@@ -65,14 +75,24 @@ export async function POST(request: NextRequest) {
     }
 
     // Create trip
-    const trip = await prisma.trip.create({
-      data: {
+    const { data: trip, error: tripError } = await supabase
+      .from('trips')
+      .insert({
         userId: session.user.id,
         name: name.trim(),
         shelterIds,
         estimatedDays: estimatedDays || null
-      }
-    })
+      })
+      .select()
+      .single()
+
+    if (tripError) {
+      console.error('Error creating trip:', tripError)
+      return NextResponse.json(
+        { error: 'Failed to create trip' },
+        { status: 500 }
+      )
+    }
 
     return NextResponse.json({ success: true, trip })
   } catch (error) {

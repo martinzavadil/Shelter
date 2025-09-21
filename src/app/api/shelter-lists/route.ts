@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
-import { prisma } from '@/lib/prisma'
+import { supabase } from '@/lib/supabase'
 
 export async function POST(request: NextRequest) {
   try {
@@ -11,11 +11,13 @@ export async function POST(request: NextRequest) {
     }
 
     // Verify user exists in database
-    const user = await prisma.user.findUnique({
-      where: { id: session.user.id },
-    })
+    const { data: user, error: userError } = await supabase
+      .from('users')
+      .select('id')
+      .eq('id', session.user.id)
+      .single()
 
-    if (!user) {
+    if (userError || !user) {
       return NextResponse.json(
         { error: 'User not found. Please log in again.' },
         { status: 401 }
@@ -33,24 +35,24 @@ export async function POST(request: NextRequest) {
     }
 
     // Check if shelter exists
-    const shelter = await prisma.shelter.findUnique({
-      where: { id: shelterId },
-    })
+    const { data: shelter, error: shelterError } = await supabase
+      .from('shelters')
+      .select('id')
+      .eq('id', shelterId)
+      .single()
 
-    if (!shelter) {
+    if (shelterError || !shelter) {
       return NextResponse.json({ error: 'Shelter not found' }, { status: 404 })
     }
 
     // Check if already in list
-    const existingEntry = await prisma.shelterList.findUnique({
-      where: {
-        userId_shelterId_listType: {
-          userId: session.user.id,
-          shelterId,
-          listType,
-        },
-      },
-    })
+    const { data: existingEntry } = await supabase
+      .from('shelter_lists')
+      .select('id')
+      .eq('userId', session.user.id)
+      .eq('shelterId', shelterId)
+      .eq('listType', listType)
+      .single()
 
     if (existingEntry) {
       return NextResponse.json(
@@ -60,27 +62,34 @@ export async function POST(request: NextRequest) {
     }
 
     // Add to list
-    const shelterList = await prisma.shelterList.create({
-      data: {
+    const { data: shelterList, error: insertError } = await supabase
+      .from('shelter_lists')
+      .insert({
         userId: session.user.id,
         shelterId,
         listType,
-      },
-      include: {
-        shelter: {
-          select: {
-            id: true,
-            name: true,
-            type: true,
-            latitude: true,
-            longitude: true,
-            elevation: true,
-            isFree: true,
-            capacity: true,
-          },
-        },
-      },
-    })
+      })
+      .select(`
+        *,
+        shelter:shelters(
+          id,
+          name,
+          type,
+          latitude,
+          longitude,
+          elevation,
+          isFree,
+          capacity
+        )
+      `)
+      .single()
+
+    if (insertError) {
+      return NextResponse.json(
+        { error: 'Failed to add to list' },
+        { status: 500 }
+      )
+    }
 
     return NextResponse.json({
       success: true,
@@ -104,11 +113,13 @@ export async function DELETE(request: NextRequest) {
     }
 
     // Verify user exists in database
-    const user = await prisma.user.findUnique({
-      where: { id: session.user.id },
-    })
+    const { data: user, error: userError } = await supabase
+      .from('users')
+      .select('id')
+      .eq('id', session.user.id)
+      .single()
 
-    if (!user) {
+    if (userError || !user) {
       return NextResponse.json(
         { error: 'User not found. Please log in again.' },
         { status: 401 }
@@ -128,18 +139,17 @@ export async function DELETE(request: NextRequest) {
     }
 
     // Remove from list
-    const deletedEntry = await prisma.shelterList.deleteMany({
-      where: {
-        userId: session.user.id,
-        shelterId,
-        listType,
-      },
-    })
+    const { error: deleteError } = await supabase
+      .from('shelter_lists')
+      .delete()
+      .eq('userId', session.user.id)
+      .eq('shelterId', shelterId)
+      .eq('listType', listType)
 
-    if (deletedEntry.count === 0) {
+    if (deleteError) {
       return NextResponse.json(
-        { error: `Shelter not found in ${listType}` },
-        { status: 404 }
+        { error: `Failed to remove from ${listType}` },
+        { status: 500 }
       )
     }
 
@@ -164,11 +174,13 @@ export async function GET(request: NextRequest) {
     }
 
     // Verify user exists in database
-    const user = await prisma.user.findUnique({
-      where: { id: session.user.id },
-    })
+    const { data: user, error: userError } = await supabase
+      .from('users')
+      .select('id')
+      .eq('id', session.user.id)
+      .single()
 
-    if (!user) {
+    if (userError || !user) {
       return NextResponse.json(
         { error: 'User not found. Please log in again.' },
         { status: 401 }
@@ -187,43 +199,61 @@ export async function GET(request: NextRequest) {
       whereClause.listType = listType
     }
 
-    const shelterLists = await prisma.shelterList.findMany({
-      where: whereClause,
-      include: {
-        shelter: {
-          select: {
-            id: true,
-            name: true,
-            description: true,
-            type: true,
-            latitude: true,
-            longitude: true,
-            elevation: true,
-            isFree: true,
-            capacity: true,
-            isServiced: true,
-            amenities: true,
-            photos: {
-              take: 1,
-              orderBy: { createdAt: 'desc' },
-              select: { url: true }
-            },
-            _count: {
-              select: { reviews: true }
-            }
-          },
-        },
-      },
-      orderBy: { createdAt: 'desc' },
-    })
+    let query = supabase
+      .from('shelter_lists')
+      .select(`
+        *,
+        shelter:shelters(
+          id,
+          name,
+          description,
+          type,
+          latitude,
+          longitude,
+          elevation,
+          isFree,
+          capacity,
+          isServiced,
+          amenities,
+          photos(url),
+          reviews(id)
+        )
+      `)
+      .eq('userId', session.user.id)
+      .order('createdAt', { ascending: false })
+
+    if (listType && ['wishlist', 'visited'].includes(listType)) {
+      query = query.eq('listType', listType)
+    }
+
+    const { data: shelterLists, error: listsError } = await query
+
+    if (listsError) {
+      return NextResponse.json(
+        { error: 'Failed to fetch shelter lists' },
+        { status: 500 }
+      )
+    }
+
+    // Transform data to match previous format
+    const transformedLists = shelterLists?.map(item => ({
+      ...item,
+      shelter: {
+        ...item.shelter,
+        photos: item.shelter?.photos?.slice(0, 1) || [],
+        _count: {
+          reviews: item.shelter?.reviews?.length || 0
+        }
+      }
+    })) || []
 
     // Group by listType for easier frontend consumption
     const groupedLists = {
-      wishlist: shelterLists.filter(item => item.listType === 'wishlist'),
-      visited: shelterLists.filter(item => item.listType === 'visited'),
+      wishlist: transformedLists.filter(item => item.listType === 'wishlist'),
+      visited: transformedLists.filter(item => item.listType === 'visited'),
     }
 
-    return NextResponse.json(listType ? shelterLists : groupedLists)
+    return NextResponse.json(listType ? transformedLists : groupedLists)
   } catch (error) {
     console.error('Error fetching shelter lists:', error)
     return NextResponse.json(

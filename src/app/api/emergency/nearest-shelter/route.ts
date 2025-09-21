@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { prisma } from '@/lib/prisma'
+import { supabase } from '@/lib/supabase'
 import { calculateDistance } from '@/lib/emergency-utils'
 
 export async function GET(request: NextRequest) {
@@ -34,30 +34,21 @@ export async function GET(request: NextRequest) {
     }
 
     // Get all shelters with coordinates
-    const shelters = await prisma.shelter.findMany({
-      where: {
-        AND: [
-          { latitude: { not: null } },
-          { longitude: { not: null } }
-        ]
-      },
-      select: {
-        id: true,
-        name: true,
-        description: true,
-        type: true,
-        latitude: true,
-        longitude: true,
-        elevation: true,
-        capacity: true,
-        isFree: true,
-        isServiced: true,
-        accessibility: true,
-        amenities: true
-      }
-    })
+    const { data: shelters, error } = await supabase
+      .from('shelters')
+      .select('id, name, description, type, latitude, longitude, elevation, capacity, isFree, isServiced, accessibility, amenities')
+      .not('latitude', 'is', null)
+      .not('longitude', 'is', null)
 
-    if (shelters.length === 0) {
+    if (error) {
+      console.error('Error fetching shelters:', error)
+      return NextResponse.json(
+        { error: 'Failed to fetch shelters' },
+        { status: 500 }
+      )
+    }
+
+    if (!shelters || shelters.length === 0) {
       return NextResponse.json(
         { error: 'No shelters with coordinates found' },
         { status: 404 }

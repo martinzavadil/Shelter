@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { ReviewForm } from './review-form'
 import { PhotoUpload } from './photo-upload'
+import { ShelterActions } from './shelter-actions'
 
 interface ShelterDetailClientProps {
   shelterId: string
@@ -20,6 +21,7 @@ export function ShelterDetailClient({ shelterId, initialPhotoCount }: ShelterDet
 
   return (
     <div className="space-y-6">
+      <ShelterActions shelterId={shelterId} className="w-full" />
       <ReviewForm
         shelterId={shelterId}
         onReviewSubmitted={handleRefresh}

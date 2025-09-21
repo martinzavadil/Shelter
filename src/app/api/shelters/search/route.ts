@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { prisma } from '@/lib/prisma'
+import { supabase } from '@/lib/supabase'
 
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url)
@@ -18,103 +18,66 @@ export async function GET(request: NextRequest) {
   const amenities = searchParams.get('amenities')?.split(',').filter(Boolean) || []
 
   try {
-    // Build WHERE conditions
-    const whereConditions: any = {
-      AND: [
-        { latitude: { not: null } },
-        { longitude: { not: null } },
-      ],
-    }
+    // Build Supabase query
+    let supabaseQuery = supabase
+      .from('shelters')
+      .select('id, name, description, type, isFree, capacity, isServiced, accessibility, amenities, latitude, longitude, elevation')
+      .not('latitude', 'is', null)
+      .not('longitude', 'is', null)
+      .order('name', { ascending: true })
 
     // Full-text search on name and description
     if (query.trim()) {
-      // Use Postgres full-text search
-      whereConditions.AND.push({
-        OR: [
-          {
-            name: {
-              contains: query,
-              mode: 'insensitive',
-            },
-          },
-          {
-            description: {
-              contains: query,
-              mode: 'insensitive',
-            },
-          },
-        ],
-      })
+      supabaseQuery = supabaseQuery.or(`name.ilike.%${query}%, description.ilike.%${query}%`)
     }
 
     // Type filter
     if (type) {
-      whereConditions.AND.push({ type })
+      supabaseQuery = supabaseQuery.eq('type', type)
     }
 
     // Free/Paid filter
     if (isFree !== null) {
-      whereConditions.AND.push({ isFree: isFree === 'true' })
+      supabaseQuery = supabaseQuery.eq('isFree', isFree === 'true')
     }
 
     // Minimum capacity filter
     if (minCapacity) {
       const capacity = parseInt(minCapacity)
       if (!isNaN(capacity)) {
-        whereConditions.AND.push({
-          capacity: { gte: capacity },
-        })
+        supabaseQuery = supabaseQuery.gte('capacity', capacity)
       }
     }
 
     // Serviced filter
     if (isServiced !== null) {
-      whereConditions.AND.push({ isServiced: isServiced === 'true' })
+      supabaseQuery = supabaseQuery.eq('isServiced', isServiced === 'true')
     }
 
     // Accessibility filter - shelter must have ALL specified accessibility options
     if (accessibility.length > 0) {
-      whereConditions.AND.push({
-        accessibility: {
-          hasEvery: accessibility,
-        },
-      })
+      supabaseQuery = supabaseQuery.contains('accessibility', accessibility)
     }
 
     // Amenities filter - shelter must have ALL specified amenities
     if (amenities.length > 0) {
-      whereConditions.AND.push({
-        amenities: {
-          hasEvery: amenities,
-        },
-      })
+      supabaseQuery = supabaseQuery.contains('amenities', amenities)
     }
 
     // Execute query
-    const shelters = await prisma.shelter.findMany({
-      where: whereConditions,
-      select: {
-        id: true,
-        name: true,
-        description: true,
-        type: true,
-        isFree: true,
-        capacity: true,
-        isServiced: true,
-        accessibility: true,
-        amenities: true,
-        latitude: true,
-        longitude: true,
-        elevation: true,
-      },
-      orderBy: [
-        { name: 'asc' },
-      ],
-    })
+    const { data: shelters, error } = await supabaseQuery
+
+    if (error) {
+      console.error('Supabase search error:', error)
+      return NextResponse.json(
+        { error: 'Failed to search shelters' },
+        { status: 500 }
+      )
+    }
 
     return NextResponse.json({
-      shelters,
-      count: shelters.length,
+      shelters: shelters || [],
+      count: shelters?.length || 0,
       query: {
         q: query,
         type,

@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { prisma } from '@/lib/prisma'
+import { supabase } from '@/lib/supabase'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { ShelterDetailClient } from '@/components/shelter/shelter-detail-client'
@@ -8,19 +8,44 @@ import { ArrowLeft, MapPin, Users, Mountain } from 'lucide-react'
 
 async function getShelter(id: string) {
   try {
-    const shelter = await prisma.shelter.findUnique({
-      where: { id },
-      include: {
-        reviews: {
-          orderBy: { createdAt: 'desc' },
-          take: 5,
-        },
-        photos: {
-          orderBy: { createdAt: 'desc' },
-          take: 5,
-        },
-      },
-    })
+    const { data: shelter, error } = await supabase
+      .from('shelters')
+      .select(`
+        *,
+        reviews (
+          id,
+          rating,
+          comment,
+          createdAt
+        ),
+        photos (
+          id,
+          url,
+          filename,
+          createdAt
+        )
+      `)
+      .eq('id', id)
+      .single()
+
+    if (error) {
+      console.error('Error fetching shelter:', error)
+      return null
+    }
+
+    // Sort reviews and photos by createdAt desc and take only first 5
+    if (shelter.reviews) {
+      shelter.reviews = shelter.reviews
+        .sort((a: any, b: any) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
+        .slice(0, 5)
+    }
+
+    if (shelter.photos) {
+      shelter.photos = shelter.photos
+        .sort((a: any, b: any) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
+        .slice(0, 5)
+    }
+
     return shelter
   } catch (error) {
     console.error('Error fetching shelter:', error)
@@ -179,7 +204,7 @@ export default async function ShelterDetailPage({ params }: PageProps) {
                             ))}
                           </div>
                           <span className="text-xs text-muted-foreground">
-                            {review.createdAt.toLocaleDateString()}
+                            {new Date(review.createdAt).toLocaleDateString()}
                           </span>
                         </div>
                         {review.comment && (

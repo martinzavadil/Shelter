@@ -330,12 +330,14 @@ export function DiscoverClient() {
                       </div>
 
                       <div className="space-y-3">
-                        <ShelterActions shelterId={shelter.id} className="w-full" />
                         <Button asChild className="w-full" variant="outline">
                           <Link href={`/shelter/${shelter.id}`}>
                             View Details
                           </Link>
                         </Button>
+                        {/* Temporarily disabled due to Prisma errors
+                        <ShelterActions shelterId={shelter.id} className="w-full" />
+                        */}
                       </div>
                     </CardContent>
                   </Card>
