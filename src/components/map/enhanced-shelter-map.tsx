@@ -119,7 +119,7 @@ export default function EnhancedShelterMap({ initialShelters }: EnhancedShelterM
     if (!routeFeature) return null
 
     return {
-      name: gpxFileName.replace('.gpx', '') || 'Sheltr Route',
+      name: gpxFileName.replace('.gpx', '') || 'Shelty Route',
       coordinates: routeFeature.geometry.coordinates
     }
   }

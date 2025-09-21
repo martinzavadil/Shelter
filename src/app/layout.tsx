@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sheltr - Mountain Shelters & Huts",
+  title: "Shelty - Mountain Shelters & Huts",
   description: "Find and explore mountain shelters and huts for your next adventure",
 };
 

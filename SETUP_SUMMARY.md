@@ -1,4 +1,4 @@
-# Setup & Deployment Summary - Sheltr
+# Setup & Deployment Summary - Shelty
 
 ## ✅ Ready for Production Deployment
 
@@ -44,7 +44,7 @@ npm run test
 
 ## 🌐 One-Click Deploy to Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/sheltr)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/shelty)
 
 ### Manual Deployment:
 ```bash

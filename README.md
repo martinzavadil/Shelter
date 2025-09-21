@@ -1,4 +1,4 @@
-# Sheltr - Mountain Shelters & Huts
+# Shelty - Mountain Shelters & Huts
 
 A comprehensive web application for finding and managing mountain shelters and huts. Built as an 8-hour sprint MVP with modern web technologies.
 
@@ -27,7 +27,7 @@ A comprehensive web application for finding and managing mountain shelters and h
 
 ```bash
 git clone <repository-url>
-cd sheltr
+cd shelty
 npm install
 ```
 
@@ -43,7 +43,7 @@ Edit `.env.local` with your configuration:
 
 ```bash
 # Required: Database connection
-DATABASE_URL="postgresql://username:password@localhost:5432/sheltr_db"
+DATABASE_URL="postgresql://username:password@localhost:5432/shelty_db"
 
 # Required: NextAuth configuration
 NEXTAUTH_SECRET="generate-with-openssl-rand-base64-32"
@@ -109,7 +109,7 @@ src/
 
 ### Deploy to Vercel (Recommended)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/sheltr)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/shelty)
 
 #### Manual Deployment:
 

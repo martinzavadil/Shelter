@@ -104,7 +104,7 @@ export function GPXControls({ onGPXLoaded, onClearRoute, currentRoute, className
       const url = URL.createObjectURL(blob)
       const a = document.createElement('a')
       a.href = url
-      a.download = `sheltr-route-${new Date().toISOString().split('T')[0]}.gpx`
+      a.download = `shelty-route-${new Date().toISOString().split('T')[0]}.gpx`
       document.body.appendChild(a)
       a.click()
       document.body.removeChild(a)
@@ -179,7 +179,7 @@ export function GPXControls({ onGPXLoaded, onClearRoute, currentRoute, className
 }
 
 function generateGPXFromRoute(routeData: any): string {
-  const { name = 'Sheltr Route', coordinates } = routeData
+  const { name = 'Shelty Route', coordinates } = routeData
 
   const trackPoints = coordinates.map(([lng, lat, ele]: [number, number, number?]) => {
     const elevation = ele ? ` <ele>${ele}</ele>` : ''
@@ -187,7 +187,7 @@ function generateGPXFromRoute(routeData: any): string {
   }).join('\n')
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<gpx version="1.1" creator="Sheltr" xmlns="http://www.topografix.com/GPX/1/1">
+<gpx version="1.1" creator="Shelty" xmlns="http://www.topografix.com/GPX/1/1">
   <trk>
     <name>${name}</name>
     <trkseg>

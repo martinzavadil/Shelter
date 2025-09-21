@@ -1,8 +1,8 @@
-# Deployment Guide - Sheltr
+# Deployment Guide - Shelty
 
 ## Quick Deploy to Vercel (One-Click)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/sheltr)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/shelty)
 
 ## Manual Deployment Steps
 
