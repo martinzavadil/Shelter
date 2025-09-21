@@ -1,21 +1,23 @@
-import { prisma } from '@/lib/prisma'
+import { supabase } from '@/lib/supabase'
 import { TripBuilderClient } from '@/components/trip/trip-builder-client'
 
 async function getShelters() {
   try {
-    const shelters = await prisma.shelter.findMany({
-      where: {
-        AND: [
-          { latitude: { not: null } },
-          { longitude: { not: null } }
-        ]
-      },
-      orderBy: { name: 'asc' }
-    })
-    return shelters
+    const { data: shelters, error } = await supabase
+      .from('shelters')
+      .select('*')
+      .not('latitude', 'is', null)
+      .not('longitude', 'is', null)
+      .order('name', { ascending: true })
+
+    if (error) {
+      console.error('Error fetching shelters:', error)
+      return []
+    }
+
+    return shelters || []
   } catch (error) {
     console.error('Error fetching shelters:', error)
-    // Return empty array when database is not available
     return []
   }
 }

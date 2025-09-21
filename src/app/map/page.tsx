@@ -1,31 +1,33 @@
-import { prisma } from '@/lib/prisma'
+import { supabase } from '@/lib/supabase'
 import { Map } from '@/components/map/map-wrapper'
 
 async function getShelters() {
   try {
-    const shelters = await prisma.shelter.findMany({
-      select: {
-        id: true,
-        name: true,
-        description: true,
-        type: true,
-        isFree: true,
-        capacity: true,
-        isServiced: true,
-        accessibility: true,
-        amenities: true,
-        latitude: true,
-        longitude: true,
-        elevation: true,
-      },
-      where: {
-        AND: [
-          { latitude: { not: null } },
-          { longitude: { not: null } },
-        ],
-      },
-    })
-    return shelters
+    const { data: shelters, error } = await supabase
+      .from('shelters')
+      .select(`
+        id,
+        name,
+        description,
+        type,
+        isFree,
+        capacity,
+        isServiced,
+        accessibility,
+        amenities,
+        latitude,
+        longitude,
+        elevation
+      `)
+      .not('latitude', 'is', null)
+      .not('longitude', 'is', null)
+
+    if (error) {
+      console.error('Error fetching shelters:', error)
+      return []
+    }
+
+    return shelters || []
   } catch (error) {
     console.error('Error fetching shelters:', error)
     return []
