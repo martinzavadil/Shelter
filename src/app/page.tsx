@@ -18,12 +18,12 @@ export default function Home() {
       ></div>
 
       {/* Content */}
-      <div className="relative z-20 min-h-screen flex items-center justify-center">
+      <div className="relative z-20 min-h-screen flex items-start justify-center" style={{ paddingTop: '40px' }}>
         <div className="container mx-auto px-4 py-12 w-full">
           <div className="max-w-4xl mx-auto text-center text-white">
             <h1 className="text-5xl font-bold tracking-tight mb-6" style={{ color: '#202020' }}>
               Find Your Perfect
-              <span className="text-yellow-400"> Mountain Shelter</span>
+              <span style={{ color: '#202020' }}> Mountain Shelter</span>
             </h1>
 
             <p className="text-xl mb-12 max-w-2xl mx-auto" style={{ color: '#202020' }}>

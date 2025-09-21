@@ -30,10 +30,24 @@ interface NearestShelter {
   distance: number
 }
 
+interface RouteStep {
+  instruction: string
+  distance: number
+  duration: number
+}
+
+interface WalkingRoute {
+  coordinates: [number, number][]
+  distance: number
+  duration: number
+  steps: RouteStep[]
+}
+
 interface EmergencyResult {
   userLocation: UserLocation
   nearestShelter: NearestShelter
   distance: number
+  route?: WalkingRoute
 }
 
 export function EmergencyFinderClient() {
@@ -41,6 +55,7 @@ export function EmergencyFinderClient() {
   const [emergencyResult, setEmergencyResult] = useState<EmergencyResult | null>(null)
   const [isLoading, setIsLoading] = useState(false)
   const [isGettingLocation, setIsGettingLocation] = useState(false)
+  const [isCalculatingRoute, setIsCalculatingRoute] = useState(false)
 
   const findNearestShelter = async (lat: number, lng: number) => {
     setIsLoading(true)
@@ -56,11 +71,51 @@ export function EmergencyFinderClient() {
       setEmergencyResult(result)
       toast.success('Nearest shelter found!')
 
+      // Automatically calculate walking route
+      if (result.nearestShelter) {
+        await calculateRoute(lat, lng, result.nearestShelter.latitude, result.nearestShelter.longitude)
+      }
+
     } catch (error) {
       console.error('Error finding shelter:', error)
       toast.error(error instanceof Error ? error.message : 'Failed to find nearest shelter')
     } finally {
       setIsLoading(false)
+    }
+  }
+
+  const calculateRoute = async (startLat: number, startLng: number, endLat: number, endLng: number) => {
+    setIsCalculatingRoute(true)
+    try {
+      const response = await fetch('/api/emergency/route', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          startLat,
+          startLng,
+          endLat,
+          endLng,
+        }),
+      })
+
+      if (!response.ok) {
+        const error = await response.json()
+        throw new Error(error.error || 'Failed to calculate route')
+      }
+
+      const { route } = await response.json()
+
+      // Update emergency result with route
+      setEmergencyResult(prev => prev ? { ...prev, route } : null)
+      toast.success('Walking route calculated!')
+
+    } catch (error) {
+      console.error('Error calculating route:', error)
+      toast.error(error instanceof Error ? error.message : 'Failed to calculate walking route')
+    } finally {
+      setIsCalculatingRoute(false)
     }
   }
 
@@ -143,15 +198,19 @@ export function EmergencyFinderClient() {
           <CardContent className="space-y-4">
             <Button
               onClick={handleUseMyLocation}
-              disabled={isGettingLocation || isLoading}
+              disabled={isGettingLocation || isLoading || isCalculatingRoute}
               className="w-full bg-red-600 hover:bg-red-700"
             >
-              {isGettingLocation ? (
+              {isGettingLocation || isCalculatingRoute ? (
                 <Loader className="h-4 w-4 mr-2 animate-spin" />
               ) : (
                 <MapPin className="h-4 w-4 mr-2" />
               )}
-              {isGettingLocation ? 'Getting Location...' : 'Use My Location'}
+              {isGettingLocation
+                ? 'Getting Location...'
+                : isCalculatingRoute
+                ? 'Planning Route...'
+                : 'Find Shelter & Route'}
             </Button>
 
 
@@ -248,6 +307,48 @@ export function EmergencyFinderClient() {
                       </Badge>
                     ))}
                   </div>
+                </div>
+              )}
+
+              {/* Walking Route Information */}
+              {emergencyResult.route && (
+                <div className="border-t pt-4">
+                  <div className="text-sm font-medium mb-2 text-green-600">Walking Route:</div>
+                  <div className="grid grid-cols-2 gap-3 text-sm">
+                    <div className="flex items-center gap-2">
+                      <Navigation className="h-4 w-4 text-green-500" />
+                      <div>
+                        <div className="font-medium">{(emergencyResult.route.distance / 1000).toFixed(1)} km</div>
+                        <div className="text-xs text-muted-foreground">Route Distance</div>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Clock className="h-4 w-4 text-green-500" />
+                      <div>
+                        <div className="font-medium">{Math.round(emergencyResult.route.duration / 60)} min</div>
+                        <div className="text-xs text-muted-foreground">Walking Time</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {emergencyResult.route.steps.length > 0 && (
+                    <details className="mt-3">
+                      <summary className="text-sm font-medium cursor-pointer text-green-600 hover:text-green-700">
+                        Turn-by-turn directions ({emergencyResult.route.steps.length} steps)
+                      </summary>
+                      <div className="mt-2 max-h-40 overflow-y-auto space-y-1">
+                        {emergencyResult.route.steps.map((step, index) => (
+                          <div key={index} className="text-xs p-2 bg-muted rounded">
+                            <div className="font-medium">{step.instruction}</div>
+                            <div className="text-muted-foreground">
+                              {step.distance > 0 && `${step.distance.toFixed(0)}m`}
+                              {step.duration > 0 && ` • ${Math.round(step.duration / 60)} min`}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </details>
+                  )}
                 </div>
               )}
             </CardContent>

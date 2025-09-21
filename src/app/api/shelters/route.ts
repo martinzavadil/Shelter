@@ -3,7 +3,7 @@ import { supabase } from '@/lib/supabase'
 
 export async function GET() {
   try {
-    // Get shelters with photos and review counts
+    // Get shelters with photos and review counts (using LEFT JOIN to include all shelters)
     const { data: shelters, error } = await supabase
       .from('shelters')
       .select(`

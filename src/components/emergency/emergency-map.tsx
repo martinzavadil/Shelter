@@ -39,10 +39,22 @@ interface NearestShelter {
   distance: number
 }
 
+interface WalkingRoute {
+  coordinates: [number, number][]
+  distance: number
+  duration: number
+  steps: Array<{
+    instruction: string
+    distance: number
+    duration: number
+  }>
+}
+
 interface EmergencyResult {
   userLocation: UserLocation
   nearestShelter: NearestShelter
   distance: number
+  route?: WalkingRoute
 }
 
 interface EmergencyMapProps {
@@ -90,12 +102,14 @@ export function EmergencyMap({ userLocation, emergencyResult }: EmergencyMapProp
     zoom = 12
   }
 
-  // Polyline coordinates for the direct route
+  // Polyline coordinates - use route if available, otherwise direct line
   const polylinePositions: [number, number][] = emergencyResult
-    ? [
-        [emergencyResult.userLocation.latitude, emergencyResult.userLocation.longitude],
-        [emergencyResult.nearestShelter.latitude, emergencyResult.nearestShelter.longitude]
-      ]
+    ? emergencyResult.route
+      ? emergencyResult.route.coordinates
+      : [
+          [emergencyResult.userLocation.latitude, emergencyResult.userLocation.longitude],
+          [emergencyResult.nearestShelter.latitude, emergencyResult.nearestShelter.longitude]
+        ]
     : []
 
   if (!userLocation && !emergencyResult) {
@@ -133,7 +147,9 @@ export function EmergencyMap({ userLocation, emergencyResult }: EmergencyMapProp
         </CardTitle>
         <CardDescription>
           {emergencyResult
-            ? `${formatDistance(emergencyResult.distance)} straight line to nearest shelter`
+            ? emergencyResult.route
+              ? `${(emergencyResult.route.distance / 1000).toFixed(1)} km walking route to nearest shelter`
+              : `${formatDistance(emergencyResult.distance)} straight line to nearest shelter`
             : 'Your current location'
           }
         </CardDescription>
@@ -226,14 +242,14 @@ export function EmergencyMap({ userLocation, emergencyResult }: EmergencyMapProp
             )}
 
             {/* Emergency Route Line */}
-            {polylinePositions.length === 2 && (
+            {polylinePositions.length >= 2 && (
               <Polyline
                 positions={polylinePositions}
                 pathOptions={{
-                  color: '#ef4444',
-                  weight: 4,
+                  color: emergencyResult?.route ? '#16a34a' : '#ef4444',
+                  weight: emergencyResult?.route ? 5 : 4,
                   opacity: 0.8,
-                  dashArray: '10, 10'
+                  dashArray: emergencyResult?.route ? undefined : '10, 10'
                 }}
               />
             )}
